@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAlbumCover = new System.Windows.Forms.PictureBox();
             this.lblGrabber = new System.Windows.Forms.Label();
             this.lblBand = new System.Windows.Forms.Label();
             this.grpBoxPickAcolor = new System.Windows.Forms.GroupBox();
@@ -47,22 +48,23 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblDeveloper = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.toolTipAlbumCover = new System.Windows.Forms.ToolTip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlbumCover)).BeginInit();
             this.grpBoxPickAcolor.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxAlbumCover
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pictureBoxAlbumCover.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(203, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(400, 399);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxAlbumCover.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAlbumCover.BackgroundImage")));
+            this.pictureBoxAlbumCover.Location = new System.Drawing.Point(203, 73);
+            this.pictureBoxAlbumCover.Name = "pictureBoxAlbumCover";
+            this.pictureBoxAlbumCover.Size = new System.Drawing.Size(400, 399);
+            this.pictureBoxAlbumCover.TabIndex = 0;
+            this.pictureBoxAlbumCover.TabStop = false;
             // 
             // lblGrabber
             // 
@@ -114,10 +116,12 @@
             this.radBlack7.TabStop = true;
             this.radBlack7.Text = "Black";
             this.radBlack7.UseVisualStyleBackColor = true;
+            this.radBlack7.CheckedChanged += new System.EventHandler(this.radBlack7_CheckedChanged);
             // 
             // radRed6
             // 
             this.radRed6.AutoSize = true;
+            this.radRed6.Checked = true;
             this.radRed6.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radRed6.ForeColor = System.Drawing.Color.Red;
             this.radRed6.Location = new System.Drawing.Point(7, 135);
@@ -127,6 +131,7 @@
             this.radRed6.TabStop = true;
             this.radRed6.Text = "Red";
             this.radRed6.UseVisualStyleBackColor = true;
+            this.radRed6.CheckedChanged += new System.EventHandler(this.radRed6_CheckedChanged);
             // 
             // radOrange5
             // 
@@ -140,6 +145,7 @@
             this.radOrange5.TabStop = true;
             this.radOrange5.Text = "Orange";
             this.radOrange5.UseVisualStyleBackColor = true;
+            this.radOrange5.CheckedChanged += new System.EventHandler(this.radOrange5_CheckedChanged);
             // 
             // radYellow4
             // 
@@ -153,6 +159,7 @@
             this.radYellow4.TabStop = true;
             this.radYellow4.Text = "Yellow";
             this.radYellow4.UseVisualStyleBackColor = true;
+            this.radYellow4.CheckedChanged += new System.EventHandler(this.radYellow4_CheckedChanged);
             // 
             // radGreen2
             // 
@@ -166,6 +173,7 @@
             this.radGreen2.TabStop = true;
             this.radGreen2.Text = "Green";
             this.radGreen2.UseVisualStyleBackColor = true;
+            this.radGreen2.CheckedChanged += new System.EventHandler(this.radGreen2_CheckedChanged);
             // 
             // radBlue2
             // 
@@ -179,6 +187,7 @@
             this.radBlue2.TabStop = true;
             this.radBlue2.Text = "Blue";
             this.radBlue2.UseVisualStyleBackColor = true;
+            this.radBlue2.CheckedChanged += new System.EventHandler(this.radBlue2_CheckedChanged);
             // 
             // radPurple1
             // 
@@ -192,6 +201,7 @@
             this.radPurple1.TabStop = true;
             this.radPurple1.Text = "Purple";
             this.radPurple1.UseVisualStyleBackColor = true;
+            this.radPurple1.CheckedChanged += new System.EventHandler(this.radPurple1_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -218,6 +228,7 @@
             this.checkBox4.TabIndex = 3;
             this.checkBox4.Text = "Developer";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -230,6 +241,7 @@
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "AlbumCover";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -242,6 +254,7 @@
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Band";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -254,6 +267,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Grabber";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // lblDeveloper
             // 
@@ -275,6 +289,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // toolTipAlbumCover
+            // 
+            this.toolTipAlbumCover.ToolTipTitle = "RainBow Pancakes";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,11 +305,11 @@
             this.Controls.Add(this.grpBoxPickAcolor);
             this.Controls.Add(this.lblBand);
             this.Controls.Add(this.lblGrabber);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxAlbumCover);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlbumCover)).EndInit();
             this.grpBoxPickAcolor.ResumeLayout(false);
             this.grpBoxPickAcolor.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -303,7 +321,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxAlbumCover;
         private System.Windows.Forms.Label lblGrabber;
         private System.Windows.Forms.Label lblBand;
         private System.Windows.Forms.GroupBox grpBoxPickAcolor;
@@ -321,6 +339,7 @@
         private System.Windows.Forms.Label lblDeveloper;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radBlack7;
+        private System.Windows.Forms.ToolTip toolTipAlbumCover;
     }
 }
 
