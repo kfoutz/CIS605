@@ -100,28 +100,43 @@
             // 
             // btnReset
             // 
+            this.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnReset.Location = new System.Drawing.Point(51, 277);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(51, 355);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // nudLoanAmount
             // 
+            this.nudLoanAmount.Increment = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.nudLoanAmount.Location = new System.Drawing.Point(177, 83);
+            this.nudLoanAmount.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudLoanAmount.Name = "nudLoanAmount";
             this.nudLoanAmount.Size = new System.Drawing.Size(120, 20);
             this.nudLoanAmount.TabIndex = 11;
+            this.nudLoanAmount.ThousandsSeparator = true;
             // 
             // nudDuration
             // 
@@ -132,6 +147,7 @@
             // 
             // nudAPR
             // 
+            this.nudAPR.DecimalPlaces = 2;
             this.nudAPR.Location = new System.Drawing.Point(177, 135);
             this.nudAPR.Name = "nudAPR";
             this.nudAPR.Size = new System.Drawing.Size(120, 20);
@@ -141,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnReset;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.nudAPR);
             this.Controls.Add(this.nudDuration);
@@ -154,7 +171,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLoanAmount);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Loan Caluclation";
             ((System.ComponentModel.ISupportInitialize)(this.nudLoanAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAPR)).EndInit();

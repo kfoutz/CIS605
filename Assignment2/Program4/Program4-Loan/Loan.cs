@@ -19,7 +19,7 @@ namespace Program4_Loan
     class Loan
     {
 
-    public  double CalculateMonthlyPayment( decimal nudLoanAmount,  decimal nudDuration,  decimal nudAPR)
+    public  double CalculateMonthlyPayment( double nudLoanAmount,  double nudDuration,  double nudAPR)
     
 
         {

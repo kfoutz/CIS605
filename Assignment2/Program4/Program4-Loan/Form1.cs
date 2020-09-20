@@ -24,8 +24,20 @@ namespace Program4_Loan
             //Call the calulate method
 
             Loan aLoan = new Loan();
-            lblPaymentAmount.Text = aLoan.CalculateMonthlyPayment(nudLoanAmount.Value, Convert.ToInt32(nudDuration.Value), nudAPR.Value).ToString("N2");
+            lblPaymentAmount.Text = aLoan.CalculateMonthlyPayment(Convert.ToDouble(nudLoanAmount.Value), Convert.ToInt32(nudDuration.Value), Convert.ToDouble(nudAPR.Value)).ToString("N2");
 
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            nudAPR.ResetText();
+            nudDuration.ResetText();
+            nudLoanAmount.ResetText();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
