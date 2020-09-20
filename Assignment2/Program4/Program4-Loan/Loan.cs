@@ -10,6 +10,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,7 +19,17 @@ namespace Program4_Loan
     class Loan
     {
 
-    public double CalculateMonthlyPayment(int intLoanAmount, int intLoanDuration, int intAPR)
+    public  double CalculateMonthlyPayment( decimal nudLoanAmount,  decimal nudDuration,  decimal nudAPR)
+    
+
+        {
+
+
+
+            return nudLoanAmount * ((nudAPR / (100 * 12))) * (1 + Math.Pow((nudAPR / (100 * 12)), nudDuration))/ Math.Pow(1 + (nudAPR / (100 * 12)), nudDuration -1);
+
+
+        }
 
 
 

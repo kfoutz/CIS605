@@ -16,5 +16,16 @@ namespace Program4_Loan
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+
+
+            //Call the calulate method
+
+            Loan aLoan = new Loan();
+            lblPaymentAmount.Text = aLoan.CalculateMonthlyPayment(nudLoanAmount.Value, Convert.ToInt32(nudDuration.Value), nudAPR.Value).ToString("N2");
+
+        }
     }
 }

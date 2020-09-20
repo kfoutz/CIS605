@@ -31,14 +31,17 @@
             this.lblLoanAmount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.intLoanAmount = new System.Windows.Forms.MaskedTextBox();
-            this.intDurationLoan = new System.Windows.Forms.MaskedTextBox();
-            this.intAPR = new System.Windows.Forms.MaskedTextBox();
             this.lblMonthlyPayment = new System.Windows.Forms.Label();
             this.btnCalc = new System.Windows.Forms.Button();
             this.lblPaymentAmount = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.nudLoanAmount = new System.Windows.Forms.NumericUpDown();
+            this.nudDuration = new System.Windows.Forms.NumericUpDown();
+            this.nudAPR = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLoanAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAPR)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLoanAmount
@@ -68,27 +71,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Annual Intrest Rate";
             // 
-            // intLoanAmount
-            // 
-            this.intLoanAmount.Location = new System.Drawing.Point(172, 90);
-            this.intLoanAmount.Name = "intLoanAmount";
-            this.intLoanAmount.Size = new System.Drawing.Size(100, 20);
-            this.intLoanAmount.TabIndex = 3;
-            // 
-            // intDurationLoan
-            // 
-            this.intDurationLoan.Location = new System.Drawing.Point(172, 116);
-            this.intDurationLoan.Name = "intDurationLoan";
-            this.intDurationLoan.Size = new System.Drawing.Size(100, 20);
-            this.intDurationLoan.TabIndex = 4;
-            // 
-            // intAPR
-            // 
-            this.intAPR.Location = new System.Drawing.Point(172, 142);
-            this.intAPR.Name = "intAPR";
-            this.intAPR.Size = new System.Drawing.Size(100, 20);
-            this.intAPR.TabIndex = 5;
-            // 
             // lblMonthlyPayment
             // 
             this.lblMonthlyPayment.AutoSize = true;
@@ -106,6 +88,7 @@
             this.btnCalc.TabIndex = 7;
             this.btnCalc.Text = "Calculate";
             this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // lblPaymentAmount
             // 
@@ -133,24 +116,48 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // nudLoanAmount
+            // 
+            this.nudLoanAmount.Location = new System.Drawing.Point(177, 83);
+            this.nudLoanAmount.Name = "nudLoanAmount";
+            this.nudLoanAmount.Size = new System.Drawing.Size(120, 20);
+            this.nudLoanAmount.TabIndex = 11;
+            // 
+            // nudDuration
+            // 
+            this.nudDuration.Location = new System.Drawing.Point(177, 109);
+            this.nudDuration.Name = "nudDuration";
+            this.nudDuration.Size = new System.Drawing.Size(120, 20);
+            this.nudDuration.TabIndex = 12;
+            // 
+            // nudAPR
+            // 
+            this.nudAPR.Location = new System.Drawing.Point(177, 135);
+            this.nudAPR.Name = "nudAPR";
+            this.nudAPR.Size = new System.Drawing.Size(120, 20);
+            this.nudAPR.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nudAPR);
+            this.Controls.Add(this.nudDuration);
+            this.Controls.Add(this.nudLoanAmount);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblPaymentAmount);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.lblMonthlyPayment);
-            this.Controls.Add(this.intAPR);
-            this.Controls.Add(this.intDurationLoan);
-            this.Controls.Add(this.intLoanAmount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLoanAmount);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.nudLoanAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAPR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,14 +168,14 @@
         private System.Windows.Forms.Label lblLoanAmount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox intLoanAmount;
-        private System.Windows.Forms.MaskedTextBox intDurationLoan;
-        private System.Windows.Forms.MaskedTextBox intAPR;
         private System.Windows.Forms.Label lblMonthlyPayment;
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Label lblPaymentAmount;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.NumericUpDown nudLoanAmount;
+        private System.Windows.Forms.NumericUpDown nudDuration;
+        private System.Windows.Forms.NumericUpDown nudAPR;
     }
 }
 
