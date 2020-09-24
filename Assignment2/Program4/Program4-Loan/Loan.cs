@@ -19,18 +19,21 @@ namespace Program4_Loan
     class Loan
     {
 
-    public  double CalculateMonthlyPayment( double nudLoanAmount,  double nudDuration,  double nudAPR)
+     public  double CalculateMonthlyPayment( double nudLoanAmount,  double nudDuration,  double nudAPR)
     
+
+
 
         {
 
 
 
-            return nudLoanAmount * ((nudAPR / (100 * 12))) * (1 + Math.Pow((nudAPR / (100 * 12)), nudDuration))/ Math.Pow(1 + (nudAPR / (100 * 12)), nudDuration -1);
+            return nudLoanAmount * (nudAPR / (100* 12)) * Math.Pow(1 + (nudAPR / (100* 12)), nudDuration)/ Math.Pow(1 + (nudAPR / (100* 12)), nudDuration -1);
 
 
         }
 
+    
 
 
     }

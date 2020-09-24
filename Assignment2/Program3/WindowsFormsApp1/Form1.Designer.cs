@@ -60,9 +60,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxAlbumCover.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAlbumCover.BackgroundImage")));
-            this.pictureBoxAlbumCover.Location = new System.Drawing.Point(203, 73);
+            this.pictureBoxAlbumCover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAlbumCover.Location = new System.Drawing.Point(271, 90);
+            this.pictureBoxAlbumCover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxAlbumCover.Name = "pictureBoxAlbumCover";
-            this.pictureBoxAlbumCover.Size = new System.Drawing.Size(400, 399);
+            this.pictureBoxAlbumCover.Size = new System.Drawing.Size(533, 491);
             this.pictureBoxAlbumCover.TabIndex = 0;
             this.pictureBoxAlbumCover.TabStop = false;
             // 
@@ -70,7 +72,8 @@
             // 
             this.lblGrabber.AutoSize = true;
             this.lblGrabber.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrabber.Location = new System.Drawing.Point(18, 9);
+            this.lblGrabber.Location = new System.Drawing.Point(24, 11);
+            this.lblGrabber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGrabber.Name = "lblGrabber";
             this.lblGrabber.Size = new System.Drawing.Size(267, 29);
             this.lblGrabber.TabIndex = 1;
@@ -80,7 +83,8 @@
             // 
             this.lblBand.AutoSize = true;
             this.lblBand.Font = new System.Drawing.Font("Showcard Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBand.Location = new System.Drawing.Point(287, 23);
+            this.lblBand.Location = new System.Drawing.Point(383, 28);
+            this.lblBand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBand.Name = "lblBand";
             this.lblBand.Size = new System.Drawing.Size(261, 44);
             this.lblBand.TabIndex = 2;
@@ -96,9 +100,11 @@
             this.grpBoxPickAcolor.Controls.Add(this.radBlue2);
             this.grpBoxPickAcolor.Controls.Add(this.radPurple1);
             this.grpBoxPickAcolor.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpBoxPickAcolor.Location = new System.Drawing.Point(16, 154);
+            this.grpBoxPickAcolor.Location = new System.Drawing.Point(21, 190);
+            this.grpBoxPickAcolor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpBoxPickAcolor.Name = "grpBoxPickAcolor";
-            this.grpBoxPickAcolor.Size = new System.Drawing.Size(107, 197);
+            this.grpBoxPickAcolor.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpBoxPickAcolor.Size = new System.Drawing.Size(143, 242);
             this.grpBoxPickAcolor.TabIndex = 3;
             this.grpBoxPickAcolor.TabStop = false;
             this.grpBoxPickAcolor.Text = "Pick a color";
@@ -109,12 +115,13 @@
             this.radBlack7.Checked = true;
             this.radBlack7.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radBlack7.ForeColor = System.Drawing.Color.Black;
-            this.radBlack7.Location = new System.Drawing.Point(7, 160);
+            this.radBlack7.Location = new System.Drawing.Point(9, 197);
+            this.radBlack7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radBlack7.Name = "radBlack7";
             this.radBlack7.Size = new System.Drawing.Size(58, 19);
             this.radBlack7.TabIndex = 6;
             this.radBlack7.TabStop = true;
-            this.radBlack7.Text = "Black";
+            this.radBlack7.Text = "&Black";
             this.radBlack7.UseVisualStyleBackColor = true;
             this.radBlack7.CheckedChanged += new System.EventHandler(this.radBlack7_CheckedChanged);
             // 
@@ -124,12 +131,13 @@
             this.radRed6.Checked = true;
             this.radRed6.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radRed6.ForeColor = System.Drawing.Color.Red;
-            this.radRed6.Location = new System.Drawing.Point(7, 135);
+            this.radRed6.Location = new System.Drawing.Point(9, 166);
+            this.radRed6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radRed6.Name = "radRed6";
             this.radRed6.Size = new System.Drawing.Size(48, 19);
             this.radRed6.TabIndex = 5;
             this.radRed6.TabStop = true;
-            this.radRed6.Text = "Red";
+            this.radRed6.Text = "&Red";
             this.radRed6.UseVisualStyleBackColor = true;
             this.radRed6.CheckedChanged += new System.EventHandler(this.radRed6_CheckedChanged);
             // 
@@ -138,12 +146,13 @@
             this.radOrange5.AutoSize = true;
             this.radOrange5.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radOrange5.ForeColor = System.Drawing.Color.Orange;
-            this.radOrange5.Location = new System.Drawing.Point(7, 112);
+            this.radOrange5.Location = new System.Drawing.Point(9, 138);
+            this.radOrange5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radOrange5.Name = "radOrange5";
             this.radOrange5.Size = new System.Drawing.Size(68, 19);
             this.radOrange5.TabIndex = 4;
             this.radOrange5.TabStop = true;
-            this.radOrange5.Text = "Orange";
+            this.radOrange5.Text = "&Orange";
             this.radOrange5.UseVisualStyleBackColor = true;
             this.radOrange5.CheckedChanged += new System.EventHandler(this.radOrange5_CheckedChanged);
             // 
@@ -152,12 +161,13 @@
             this.radYellow4.AutoSize = true;
             this.radYellow4.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radYellow4.ForeColor = System.Drawing.Color.Gold;
-            this.radYellow4.Location = new System.Drawing.Point(7, 89);
+            this.radYellow4.Location = new System.Drawing.Point(9, 110);
+            this.radYellow4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radYellow4.Name = "radYellow4";
             this.radYellow4.Size = new System.Drawing.Size(64, 19);
             this.radYellow4.TabIndex = 3;
             this.radYellow4.TabStop = true;
-            this.radYellow4.Text = "Yellow";
+            this.radYellow4.Text = "&Yellow";
             this.radYellow4.UseVisualStyleBackColor = true;
             this.radYellow4.CheckedChanged += new System.EventHandler(this.radYellow4_CheckedChanged);
             // 
@@ -166,12 +176,13 @@
             this.radGreen2.AutoSize = true;
             this.radGreen2.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radGreen2.ForeColor = System.Drawing.Color.LimeGreen;
-            this.radGreen2.Location = new System.Drawing.Point(7, 66);
+            this.radGreen2.Location = new System.Drawing.Point(9, 81);
+            this.radGreen2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radGreen2.Name = "radGreen2";
             this.radGreen2.Size = new System.Drawing.Size(58, 19);
             this.radGreen2.TabIndex = 2;
             this.radGreen2.TabStop = true;
-            this.radGreen2.Text = "Green";
+            this.radGreen2.Text = "&Green";
             this.radGreen2.UseVisualStyleBackColor = true;
             this.radGreen2.CheckedChanged += new System.EventHandler(this.radGreen2_CheckedChanged);
             // 
@@ -180,12 +191,13 @@
             this.radBlue2.AutoSize = true;
             this.radBlue2.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radBlue2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.radBlue2.Location = new System.Drawing.Point(7, 43);
+            this.radBlue2.Location = new System.Drawing.Point(9, 53);
+            this.radBlue2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radBlue2.Name = "radBlue2";
             this.radBlue2.Size = new System.Drawing.Size(50, 19);
             this.radBlue2.TabIndex = 1;
             this.radBlue2.TabStop = true;
-            this.radBlue2.Text = "Blue";
+            this.radBlue2.Text = "&Blue";
             this.radBlue2.UseVisualStyleBackColor = true;
             this.radBlue2.CheckedChanged += new System.EventHandler(this.radBlue2_CheckedChanged);
             // 
@@ -194,12 +206,13 @@
             this.radPurple1.AutoSize = true;
             this.radPurple1.Font = new System.Drawing.Font("Bauhaus 93", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radPurple1.ForeColor = System.Drawing.Color.Purple;
-            this.radPurple1.Location = new System.Drawing.Point(7, 20);
+            this.radPurple1.Location = new System.Drawing.Point(9, 25);
+            this.radPurple1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radPurple1.Name = "radPurple1";
             this.radPurple1.Size = new System.Drawing.Size(62, 19);
             this.radPurple1.TabIndex = 0;
             this.radPurple1.TabStop = true;
-            this.radPurple1.Text = "Purple";
+            this.radPurple1.Text = "&Purple";
             this.radPurple1.UseVisualStyleBackColor = true;
             this.radPurple1.CheckedChanged += new System.EventHandler(this.radPurple1_CheckedChanged);
             // 
@@ -210,9 +223,11 @@
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Font = new System.Drawing.Font("Bauhaus 93", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(636, 154);
+            this.groupBox1.Location = new System.Drawing.Point(848, 190);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(122, 197);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(163, 242);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Show/ Hide";
@@ -222,7 +237,8 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Checked = true;
             this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox4.Location = new System.Drawing.Point(6, 114);
+            this.checkBox4.Location = new System.Drawing.Point(8, 140);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(100, 22);
             this.checkBox4.TabIndex = 3;
@@ -235,7 +251,8 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(6, 86);
+            this.checkBox3.Location = new System.Drawing.Point(8, 106);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(112, 22);
             this.checkBox3.TabIndex = 2;
@@ -248,7 +265,8 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Checked = true;
             this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(6, 58);
+            this.checkBox2.Location = new System.Drawing.Point(8, 71);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(63, 22);
             this.checkBox2.TabIndex = 1;
@@ -261,7 +279,8 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(6, 30);
+            this.checkBox1.Location = new System.Drawing.Point(8, 37);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(83, 22);
             this.checkBox1.TabIndex = 0;
@@ -273,7 +292,8 @@
             // 
             this.lblDeveloper.AutoSize = true;
             this.lblDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeveloper.Location = new System.Drawing.Point(12, 516);
+            this.lblDeveloper.Location = new System.Drawing.Point(16, 635);
+            this.lblDeveloper.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeveloper.Name = "lblDeveloper";
             this.lblDeveloper.Size = new System.Drawing.Size(144, 20);
             this.lblDeveloper.TabIndex = 5;
@@ -281,9 +301,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(713, 505);
+            this.button1.Location = new System.Drawing.Point(951, 622);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.Size = new System.Drawing.Size(100, 34);
             this.button1.TabIndex = 6;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
@@ -291,14 +312,15 @@
             // 
             // toolTipAlbumCover
             // 
+            this.toolTipAlbumCover.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
             this.toolTipAlbumCover.ToolTipTitle = "RainBow Pancakes";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.ClientSize = new System.Drawing.Size(1067, 671);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblDeveloper);
             this.Controls.Add(this.groupBox1);
@@ -306,6 +328,7 @@
             this.Controls.Add(this.lblBand);
             this.Controls.Add(this.lblGrabber);
             this.Controls.Add(this.pictureBoxAlbumCover);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -47,44 +47,49 @@
             // lblLoanAmount
             // 
             this.lblLoanAmount.AutoSize = true;
-            this.lblLoanAmount.Location = new System.Drawing.Point(48, 90);
+            this.lblLoanAmount.Location = new System.Drawing.Point(64, 111);
+            this.lblLoanAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLoanAmount.Name = "lblLoanAmount";
-            this.lblLoanAmount.Size = new System.Drawing.Size(70, 13);
+            this.lblLoanAmount.Size = new System.Drawing.Size(86, 16);
             this.lblLoanAmount.TabIndex = 0;
             this.lblLoanAmount.Text = "Loan Amount";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 116);
+            this.label2.Location = new System.Drawing.Point(64, 143);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.Size = new System.Drawing.Size(105, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Duration of Loan";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 142);
+            this.label3.Location = new System.Drawing.Point(64, 175);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.Size = new System.Drawing.Size(119, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Annual Intrest Rate";
             // 
             // lblMonthlyPayment
             // 
             this.lblMonthlyPayment.AutoSize = true;
-            this.lblMonthlyPayment.Location = new System.Drawing.Point(174, 210);
+            this.lblMonthlyPayment.Location = new System.Drawing.Point(232, 258);
+            this.lblMonthlyPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMonthlyPayment.Name = "lblMonthlyPayment";
-            this.lblMonthlyPayment.Size = new System.Drawing.Size(88, 13);
+            this.lblMonthlyPayment.Size = new System.Drawing.Size(110, 16);
             this.lblMonthlyPayment.TabIndex = 6;
             this.lblMonthlyPayment.Text = "Monthly Payment";
             // 
             // btnCalc
             // 
-            this.btnCalc.Location = new System.Drawing.Point(51, 234);
+            this.btnCalc.Location = new System.Drawing.Point(68, 288);
+            this.btnCalc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(75, 23);
+            this.btnCalc.Size = new System.Drawing.Size(100, 28);
             this.btnCalc.TabIndex = 7;
             this.btnCalc.Text = "Calculate";
             this.btnCalc.UseVisualStyleBackColor = true;
@@ -93,17 +98,19 @@
             // lblPaymentAmount
             // 
             this.lblPaymentAmount.AutoSize = true;
-            this.lblPaymentAmount.Location = new System.Drawing.Point(174, 239);
+            this.lblPaymentAmount.Location = new System.Drawing.Point(232, 294);
+            this.lblPaymentAmount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaymentAmount.Name = "lblPaymentAmount";
-            this.lblPaymentAmount.Size = new System.Drawing.Size(0, 13);
+            this.lblPaymentAmount.Size = new System.Drawing.Size(0, 16);
             this.lblPaymentAmount.TabIndex = 8;
             // 
             // btnReset
             // 
             this.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnReset.Location = new System.Drawing.Point(51, 277);
+            this.btnReset.Location = new System.Drawing.Point(68, 341);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(100, 28);
             this.btnReset.TabIndex = 9;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -112,9 +119,10 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(51, 355);
+            this.btnExit.Location = new System.Drawing.Point(68, 437);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(100, 28);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -127,38 +135,46 @@
             0,
             0,
             0});
-            this.nudLoanAmount.Location = new System.Drawing.Point(177, 83);
+            this.nudLoanAmount.Location = new System.Drawing.Point(236, 102);
+            this.nudLoanAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudLoanAmount.Maximum = new decimal(new int[] {
-            100000,
+            1000000,
             0,
             0,
             0});
             this.nudLoanAmount.Name = "nudLoanAmount";
-            this.nudLoanAmount.Size = new System.Drawing.Size(120, 20);
+            this.nudLoanAmount.Size = new System.Drawing.Size(160, 22);
             this.nudLoanAmount.TabIndex = 11;
             this.nudLoanAmount.ThousandsSeparator = true;
             // 
             // nudDuration
             // 
-            this.nudDuration.Location = new System.Drawing.Point(177, 109);
+            this.nudDuration.Location = new System.Drawing.Point(236, 134);
+            this.nudDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudDuration.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudDuration.Name = "nudDuration";
-            this.nudDuration.Size = new System.Drawing.Size(120, 20);
+            this.nudDuration.Size = new System.Drawing.Size(160, 22);
             this.nudDuration.TabIndex = 12;
             // 
             // nudAPR
             // 
             this.nudAPR.DecimalPlaces = 2;
-            this.nudAPR.Location = new System.Drawing.Point(177, 135);
+            this.nudAPR.Location = new System.Drawing.Point(236, 166);
+            this.nudAPR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nudAPR.Name = "nudAPR";
-            this.nudAPR.Size = new System.Drawing.Size(120, 20);
+            this.nudAPR.Size = new System.Drawing.Size(160, 22);
             this.nudAPR.TabIndex = 13;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.nudAPR);
             this.Controls.Add(this.nudDuration);
             this.Controls.Add(this.nudLoanAmount);
@@ -170,6 +186,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLoanAmount);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Loan Caluclation";
             ((System.ComponentModel.ISupportInitialize)(this.nudLoanAmount)).EndInit();
