@@ -39,6 +39,7 @@
             this.nudLoanAmount = new System.Windows.Forms.NumericUpDown();
             this.nudDuration = new System.Windows.Forms.NumericUpDown();
             this.nudAPR = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudLoanAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAPR)).BeginInit();
@@ -60,9 +61,9 @@
             this.label2.Location = new System.Drawing.Point(64, 143);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 16);
+            this.label2.Size = new System.Drawing.Size(150, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Duration of Loan";
+            this.label2.Text = "Duration of Loan (years)";
             // 
             // label3
             // 
@@ -87,7 +88,7 @@
             // btnCalc
             // 
             this.btnCalc.Location = new System.Drawing.Point(68, 288);
-            this.btnCalc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalc.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(100, 28);
             this.btnCalc.TabIndex = 7;
@@ -108,7 +109,7 @@
             // 
             this.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnReset.Location = new System.Drawing.Point(68, 341);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(100, 28);
             this.btnReset.TabIndex = 9;
@@ -120,7 +121,7 @@
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(68, 437);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 28);
             this.btnExit.TabIndex = 10;
@@ -136,7 +137,7 @@
             0,
             0});
             this.nudLoanAmount.Location = new System.Drawing.Point(236, 102);
-            this.nudLoanAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudLoanAmount.Margin = new System.Windows.Forms.Padding(4);
             this.nudLoanAmount.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -150,7 +151,7 @@
             // nudDuration
             // 
             this.nudDuration.Location = new System.Drawing.Point(236, 134);
-            this.nudDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudDuration.Margin = new System.Windows.Forms.Padding(4);
             this.nudDuration.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -163,18 +164,33 @@
             // nudAPR
             // 
             this.nudAPR.DecimalPlaces = 2;
+            this.nudAPR.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.nudAPR.Location = new System.Drawing.Point(236, 166);
-            this.nudAPR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudAPR.Margin = new System.Windows.Forms.Padding(4);
             this.nudAPR.Name = "nudAPR";
             this.nudAPR.Size = new System.Drawing.Size(160, 22);
             this.nudAPR.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(351, 465);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "by KCF";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(516, 490);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.nudAPR);
             this.Controls.Add(this.nudDuration);
             this.Controls.Add(this.nudLoanAmount);
@@ -186,7 +202,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblLoanAmount);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Loan Caluclation";
             ((System.ComponentModel.ISupportInitialize)(this.nudLoanAmount)).EndInit();
@@ -210,6 +226,7 @@
         private System.Windows.Forms.NumericUpDown nudLoanAmount;
         private System.Windows.Forms.NumericUpDown nudDuration;
         private System.Windows.Forms.NumericUpDown nudAPR;
+        private System.Windows.Forms.Label label1;
     }
 }
 

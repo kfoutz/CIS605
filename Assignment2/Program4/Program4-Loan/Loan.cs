@@ -13,24 +13,39 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Program4_Loan
 {
     class Loan
     {
 
-     public  double CalculateMonthlyPayment( double nudLoanAmount,  double nudDuration,  double nudAPR)
-    
+       // private decimal loanAmount, loanDuration, loanIntrest, loanMonthlyIntrest;
+
+        
 
 
 
+     public double CalculateMonthlyPayment( double nudLoanAmount,  int nudDuration,  double nudAPR)
+
+        
         {
 
 
+            double monthlyIntrest, varDuration, varAmount, varMonthlyPayment ;
 
-            return nudLoanAmount * (nudAPR / (100* 12)) * Math.Pow(1 + (nudAPR / (100* 12)), nudDuration)/ Math.Pow(1 + (nudAPR / (100* 12)), nudDuration -1);
+            monthlyIntrest = ((nudAPR /(100*12)));
 
 
+            varDuration = nudDuration*12;
+
+            varAmount = nudLoanAmount;
+
+            varMonthlyPayment = varAmount * (monthlyIntrest * Math.Pow((1 + monthlyIntrest), varDuration)) / (Math.Pow((1 + monthlyIntrest), varDuration) - 1);
+
+            return varMonthlyPayment;
+
+            //return monthlyIntrest;
         }
 
     
