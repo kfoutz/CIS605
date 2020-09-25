@@ -277,9 +277,9 @@
             this.lblDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeveloper.Location = new System.Drawing.Point(12, 516);
             this.lblDeveloper.Name = "lblDeveloper";
-            this.lblDeveloper.Size = new System.Drawing.Size(144, 20);
+            this.lblDeveloper.Size = new System.Drawing.Size(185, 20);
             this.lblDeveloper.TabIndex = 5;
-            this.lblDeveloper.Text = "Developed by: KCF";
+            this.lblDeveloper.Text = "A Kerry Foutz Production";
             // 
             // button1
             // 

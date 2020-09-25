@@ -8,3 +8,12 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program4\
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.csproj.CoreCompileInputs.cache
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\bin\Debug\Program4-Loan.exe.config
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\bin\Debug\Program4-Loan.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\bin\Debug\Program4-Loan.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4_Loan.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4_Loan.Properties.Resources.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.csproj.GenerateResource.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.pdb
