@@ -20,9 +20,7 @@ namespace Program4_Loan
     class Loan
     {
 
-       // private decimal loanAmount, loanDuration, loanIntrest, loanMonthlyIntrest;
-
-        
+             
 
 
 
@@ -45,6 +43,7 @@ namespace Program4_Loan
 
             return varMonthlyPayment;
 
+            //Troubleshooting option.  Comment out above 'return' and uncomment below.  
             //return monthlyIntrest;
         }
 

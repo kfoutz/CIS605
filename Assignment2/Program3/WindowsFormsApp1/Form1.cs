@@ -142,6 +142,10 @@ namespace WindowsFormsApp1
             
         }
 
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 
 
