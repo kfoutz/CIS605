@@ -1,0 +1,10 @@
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI_Calulation.Form1.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI_Calulation.Properties.Resources.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI Calulation.csproj.GenerateResource.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI Calulation.csproj.CoreCompileInputs.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\bin\Debug\BMI Calulation.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI Calulation.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\bin\Debug\BMI Calulation.exe.config
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\bin\Debug\BMI Calulation.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI Calulation.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\BMI Calulation\obj\Debug\BMI Calulation.csprojAssemblyReference.cache
