@@ -1,0 +1,10 @@
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\bin\Debug\Program8 PaySlip.exe.config
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\bin\Debug\Program8 PaySlip.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\bin\Debug\Program8 PaySlip.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8 PaySlip.csprojAssemblyReference.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8_PaySlip.Form1.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8_PaySlip.Properties.Resources.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8 PaySlip.csproj.GenerateResource.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8 PaySlip.csproj.CoreCompileInputs.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8 PaySlip.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\Program8 PaySlip\obj\Debug\Program8 PaySlip.pdb
