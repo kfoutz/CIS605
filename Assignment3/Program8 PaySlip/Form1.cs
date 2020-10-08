@@ -31,7 +31,7 @@ namespace Program8_PaySlip
             decHoursWorked = Convert.ToDecimal(nudHoursWorked.Value);
             decPayRate = Convert.ToDecimal(nudPayRate.Value);
 
-            // call the static  method CalculateNetPay
+            // call the static  method CalculatePay
 
             aPayslip = new PaySlip(strEmployeeName, decHoursWorked, decPayRate);
 
@@ -44,16 +44,9 @@ namespace Program8_PaySlip
 
         private void btnDisplaySummary_Click(object sender, EventArgs e)
         {
-            int intTotalNumPaySlips;
+            string strMessage = $" Number of Pay Slips: {PaySlip.TotalNumPaySlips.ToString("n0")} \n Total Gross Pay: {PaySlip.TotalGrossPay.ToString("n0")} \n Total Net Pay: {PaySlip.TotalNetPay.ToString("n2")} Average Net Pay: {PaySlip.CalculateAverageNetPay().ToString("n2")}";
 
-            PaySlip aPaySlip;
-
-            aPaySlip = new PaySlip();
-
-
-            intTotalNumPaySlips = 
-
-            lblResultTotalNumberPaySlips.Text =
+            MessageBox.Show(strMessage, "Summary", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

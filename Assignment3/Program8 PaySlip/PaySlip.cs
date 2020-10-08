@@ -32,14 +32,13 @@ namespace Program8_PaySlip
             EmployeeName = employeeName;
             HoursWorked = hoursWorked;
             PayRate = payRate;
-            
-
-            //GrossPay = CalculateNetPay();
+            GrossPay = hoursWorked * payRate;
             NetPay = CalculatePay();
 
             IncrementTotals();
         }
 
+        
         #endregion
 
         #region "Instance Methods"
@@ -65,6 +64,7 @@ namespace Program8_PaySlip
             //return netpay
 
             return netPay;
+            
         
         }
 
@@ -77,6 +77,8 @@ namespace Program8_PaySlip
             //add to gross pay
 
             TotalGrossPay += GrossPay;
+
+            TotalNetPay += NetPay;
         }
 
         #endregion
@@ -87,14 +89,14 @@ namespace Program8_PaySlip
         {
             decimal result = 0;
 
-            if (TotalNumPaySlips > 0)
+            if (TotalNumPaySlips > 1)
             {
                 result = (decimal)TotalNetPay / TotalNumPaySlips;
             }
 
             return result;
         }
-
+        
         #endregion
 
     }
