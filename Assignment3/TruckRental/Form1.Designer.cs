@@ -41,6 +41,7 @@
             this.btnCalc = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudBeginODO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEndODO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDaysRented)).BeginInit();
@@ -67,7 +68,7 @@
             // lblEndODO
             // 
             this.lblEndODO.AutoSize = true;
-            this.lblEndODO.Location = new System.Drawing.Point(45, 95);
+            this.lblEndODO.Location = new System.Drawing.Point(59, 96);
             this.lblEndODO.Name = "lblEndODO";
             this.lblEndODO.Size = new System.Drawing.Size(132, 13);
             this.lblEndODO.TabIndex = 2;
@@ -76,7 +77,7 @@
             // lblNumDays
             // 
             this.lblNumDays.AutoSize = true;
-            this.lblNumDays.Location = new System.Drawing.Point(45, 135);
+            this.lblNumDays.Location = new System.Drawing.Point(70, 136);
             this.lblNumDays.Name = "lblNumDays";
             this.lblNumDays.Size = new System.Drawing.Size(121, 13);
             this.lblNumDays.TabIndex = 3;
@@ -123,7 +124,7 @@
             // lblAmountDue
             // 
             this.lblAmountDue.AutoSize = true;
-            this.lblAmountDue.Location = new System.Drawing.Point(56, 195);
+            this.lblAmountDue.Location = new System.Drawing.Point(117, 195);
             this.lblAmountDue.Name = "lblAmountDue";
             this.lblAmountDue.Size = new System.Drawing.Size(74, 13);
             this.lblAmountDue.TabIndex = 8;
@@ -143,18 +144,20 @@
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(75, 23);
             this.btnCalc.TabIndex = 10;
-            this.btnCalc.Text = "Calulate";
+            this.btnCalc.Text = "&Calulate";
             this.btnCalc.UseVisualStyleBackColor = true;
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // btnReset
             // 
+            this.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnReset.Location = new System.Drawing.Point(205, 272);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 11;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "&Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnExit
             // 
@@ -162,9 +165,18 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 12;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 371);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Brought to you by Kerry";
             // 
             // Form1
             // 
@@ -172,7 +184,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(630, 450);
+            this.ClientSize = new System.Drawing.Size(385, 396);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalc);
@@ -211,6 +224,7 @@
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -41,12 +41,27 @@ namespace TruckRental
 
             truckRentalCharge = aTruckRental.RentalCharge;
 
-            lblRentalCharge.Text = truckRentalCharge.ToString();
+            lblRentalCharge.Text = truckRentalCharge.ToString("C");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            tbxName.Clear();
+            nudBeginODO.Value = 0;
+            nudEndODO.Value = 0;
+            nudDaysRented.Value = 0;
+            lblRentalCharge.Text = null;
+
+
+            //set focus
+
+            tbxName.Focus();
+
         }
     }
 }

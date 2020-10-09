@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 3 Program 7 - Truck Rental
+ * Date:            October 2020
+ * Developed By:    Kerry Foutz
+ * Class Name:      TruckRental
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

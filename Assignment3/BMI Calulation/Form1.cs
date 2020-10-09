@@ -44,5 +44,24 @@ namespace BMI_Calulation
 
             lblBMIcalc.Text = BMIcalc.ToString();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // reset the form for fresh inputs
+
+            tbxName.Clear();
+            nudIn.Value = 0;
+            nudWeight.Value = 0;
+            lblBMIcalc.Text = null;
+
+            //set focus
+
+            tbxName.Focus();
+        }
     }
 }

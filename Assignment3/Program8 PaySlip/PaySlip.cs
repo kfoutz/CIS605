@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 3 Program 8 - Pay Slip
+ * Date:            October 2020
+ * Developed By:    Kerry Foutz
+ * Class Name:      PaySlip
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -77,6 +85,8 @@ namespace Program8_PaySlip
             //add to gross pay
 
             TotalGrossPay += GrossPay;
+
+            //add to net pay 
 
             TotalNetPay += NetPay;
         }

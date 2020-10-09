@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 3 Program 6 - BMI
+ * Date:            October 2020
+ * Developed By:    Kerry Foutz
+ * Class Name:      BMI
+ */
+
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
