@@ -18,3 +18,13 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program5\
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.csproj.CoreCompileInputs.cache
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\bin\Debug\PaintJob.exe.config
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\bin\Debug\PaintJob.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\bin\Debug\PaintJob.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\Program5_PaintJob.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.Properties.Resources.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.csproj.GenerateResource.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.csproj.CoreCompileInputs.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program5\PaintJob\obj\Debug\PaintJob.pdb

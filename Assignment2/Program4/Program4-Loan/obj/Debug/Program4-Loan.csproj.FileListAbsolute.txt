@@ -17,3 +17,4 @@ S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Progr
 S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.csproj.GenerateResource.cache
 S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.exe
 S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\Assignment2\CIS605\Assignment2\Program4\Program4-Loan\obj\Debug\Program4-Loan.csproj.CoreCompileInputs.cache
