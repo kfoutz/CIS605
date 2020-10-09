@@ -1,0 +1,10 @@
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.csprojAssemblyReference.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.Form1.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.Properties.Resources.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.csproj.GenerateResource.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.csproj.CoreCompileInputs.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\bin\Debug\TruckRental.exe.config
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\bin\Debug\TruckRental.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\bin\Debug\TruckRental.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment3\TruckRental\obj\Debug\TruckRental.pdb
