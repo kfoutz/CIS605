@@ -18,6 +18,12 @@ namespace PropertyTax___Program10
 
     class PropertyTax
     {
+        
+
+
+
+
+
         #region "Instance Properties"
 
         private readonly string NamePropertyOwner;
@@ -49,7 +55,80 @@ namespace PropertyTax___Program10
 
         }
 
+        #region "Private Methods"
 
+        private void CalculateBuildingTax()
+        {
+            if (BuildingSquareFootage <= 1000)  //greater than 1?
+            {
+                BuildingTax = (decimal)(BuildingSquareFootage * .71);
+            }
+            else if (BuildingSquareFootage <= 2000)
+            {
+                BuildingTax = (decimal)(((BuildingSquareFootage - 1000) * .73) + 710);
+            }
+            else if (BuildingSquareFootage <=3000)
+            {
+                BuildingTax = (decimal)(((BuildingSquareFootage - 2000) * .75) + 1440);
+            }
+            else if (BuildingSquareFootage <= 4000)
+            {
+                BuildingTax = (decimal)(((BuildingSquareFootage - 3000) * .77) + 2190);
+            }
+            else if (BuildingSquareFootage > 4000)
+            {
+                BuildingTax = (decimal)(((BuildingSquareFootage - 4000) * .80) + 2960);
+            }
+            
+        }
+
+        private void CalculateLandTax()
+        {
+            if (LandSquareFootage <= 10000)
+            {
+                LandTax = (decimal)(LandSquareFootage * .04);
+            }
+            else if (LandSquareFootage <= 20000)
+            {
+                LandTax = (decimal)(((LandSquareFootage - 10000) * .06) + 400);
+            }
+            else if (LandSquareFootage <= 30000)
+            {
+                LandTax = (decimal)(((LandSquareFootage - 20000) * .08) + 1000);
+            }
+            else if (LandSquareFootage <= 40000)
+            {
+                LandTax = (decimal)(((LandSquareFootage - 30000) * .1) + 1800);
+            }
+            else if (LandSquareFootage > 40000)
+            {
+                LandTax = (decimal)(((LandSquareFootage - 40000) * .13) + 2800);
+            }
+        }
+
+        private void CalcBuildingTaxDeduction()
+        {
+            DateTime current = DateTime.Now;
+            BuildingAge = current.Year - YearBuilt;
+
+            if (BuildingAge >15 )
+            {
+                BuildingTaxDeduction = (Decimal)(BuildingAge * (.005 * (double)BuildingTax));
+            }
+        }
+
+        private void CalcLandTaxDeduction()
+        {
+            if (PropertyLocation = LocationType.Rural)
+            {
+
+            }
+            
+            if (LandSquareFootage <=22250)
+            {
+                LandTaxDeduction = 
+            }
+        }
 
 
 
