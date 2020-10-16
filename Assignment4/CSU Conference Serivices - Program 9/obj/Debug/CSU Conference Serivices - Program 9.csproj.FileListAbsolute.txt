@@ -1,0 +1,5 @@
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\CSU Conference Serivices - Program 9\obj\Debug\CSU Conference Serivices - Program 9.csprojAssemblyReference.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\CSU Conference Serivices - Program 9\obj\Debug\CSU_Conference_Serivices___Program_9.Form1.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\CSU Conference Serivices - Program 9\obj\Debug\CSU_Conference_Serivices___Program_9.Properties.Resources.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\CSU Conference Serivices - Program 9\obj\Debug\CSU Conference Serivices - Program 9.csproj.GenerateResource.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\CSU Conference Serivices - Program 9\obj\Debug\CSU Conference Serivices - Program 9.csproj.CoreCompileInputs.cache

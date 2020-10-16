@@ -16,5 +16,34 @@ namespace CSU_Conference_Serivices___Program_9
         {
             InitializeComponent();
         }
+
+        private void btnCreateConf_Click(object sender, EventArgs e)
+        {
+            
+            //declare local vars
+
+            string confName;
+            int numAttendees, numNights;
+            AccomodationChoice roomType;
+            bool internet, gym;
+
+
+            
+            Conference aConference;
+            
+                      
+            
+            confName = tbxConferenceName.Text;
+
+            
+            numAttendees = Convert.ToInt32(nudNumAttendees.Value);
+            numNights = Convert.ToInt32(nudNumNights.Value);
+            roomType = (radSingle.Checked) ? AccomodationChoice.SingleRoom : (radDouble.Checked) ? AccomodationChoice.DoubleRoom : AccomodationChoice.SuiteRoom;
+            //internet = (cbxInternet.Checked) ? Conference.I;
+
+            aConference = new Conference(confName, numAttendees, numNights, roomType, internet, gym);
+
+
+        }
     }
 }
