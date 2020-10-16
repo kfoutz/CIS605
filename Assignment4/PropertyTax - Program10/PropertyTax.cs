@@ -119,18 +119,24 @@ namespace PropertyTax___Program10
 
         private void CalcLandTaxDeduction()
         {
-            if (PropertyLocation = LocationType.Rural)
+            if (PropertyLocation == LocationType.Rural)
             {
-
-            }
-            
-            if (LandSquareFootage <=22250)
-            {
-                LandTaxDeduction = 
+                if (LandSquareFootage <= 22250)
+                {
+                    LandTaxDeduction = LandTax * (decimal)0.0025;
+                }
+                else if (LandSquareFootage > 22250)
+                {
+                    LandTaxDeduction = LandTax * (decimal)0.0025;
+                }
+            else
+                {
+                    LandTaxDeduction = 0;
+                }
             }
         }
 
-
+        #endregion
 
 
 
@@ -139,3 +145,4 @@ namespace PropertyTax___Program10
 
     }
 }
+#endregion

@@ -14,6 +14,7 @@ namespace CSU_Conference_Serivices___Program_9
         DoubleRoom,
         SuiteRoom
     }
+    #endregion
     class Conference
     {
 
@@ -119,23 +120,11 @@ namespace CSU_Conference_Serivices___Program_9
 
         private double RoomChoice()
         {
-            //double room = 0;
-            //if (AccomodationChoice >= 3)
-            //{
-            //    room = SuiteRoom;
-            //}
-            //else if (AccomodationChoice >= 2)
-            //{
-            //    room = DoubleRoom;
-            //}
-            //else 
-            //{
-            //    room = SingleRoom;
-            //}
-            
+            AccomodationChoice room = 0;
+
             switch (room)
             {
-                case accomodationChoice.SingleRoom:
+                case 1:
                     room = 31.03;
                     break;
                 case 2:
