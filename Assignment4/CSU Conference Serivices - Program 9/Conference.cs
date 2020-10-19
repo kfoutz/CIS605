@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 namespace CSU_Conference_Serivices___Program_9
 {
     #region "Enumeration"
-    public enum AccomodationChoice
+    public enum AccomodationType
     {
-        SingleRoom,
-        DoubleRoom,
-        SuiteRoom
+        Single,
+        Double,
+        Suite
     }
     #endregion
     class Conference
@@ -20,28 +20,30 @@ namespace CSU_Conference_Serivices___Program_9
 
         #region "Constants"
 
-        //const double SingleRoom = 61.03;
-        //const double DoubleRoom = 39.59;
-        //const double SuiteRoom = 73.45;
+        //const decimal Single = 61.03;
+        //const decimal Double = 39.59;
+        //const decimal Suite = 73.45;
 
         #endregion
 
 
         #region "Auto-implemented Properties"
+
         public string ConferenceName { get; set; }
-        public double AccomodationCharge { get; private set; }
-        public double OptionalServiceCharge { get; private set; }
-        public double Discount { get; private set; }
-        public double TotalCharge { get; private set; }
+        public decimal AccomodationCharge { get; private set; }
+        public decimal OptionalServicesCharge { get; private set; }
+        public decimal Discount { get; private set; }
+        public decimal TotalCharge { get; private set; }
 
         #endregion
 
-        #region "Properties"
+        #region "Fields"
 
-        private int numberOfAttendees, numOfNights;
-        private int accomodationChoice;
+        private int numberOfAttendees, numberOfNights;
+        private AccomodationType accomodationChoice;
         private bool internetAccess, recCenterAccess;
-        private AccomodationChoice roomType;
+        private decimal internetAccessCharge, recCenterAccessCharge;
+        
 
         public int NumberOfAttendees
         {
@@ -50,27 +52,30 @@ namespace CSU_Conference_Serivices___Program_9
             { 
                 numberOfAttendees = value;
                 CalculateRoomRate();
+                ReturnAccomodationRate();
             }
 
         }
 
-        public int NumOfNights
+        public int NumberOfNights
         {
-            get { return numOfNights; }
+            get { return numberOfNights; }
             set 
             {
-                numOfNights = value;
+                numberOfNights = value;
                 CalculateRoomRate();
+                ReturnAccomodationRate();
             }
         }
 
-        public AccomodationChoice RoomType
+        public AccomodationType AccomodationChoice
         {
-            get { return roomType; }
+            get { return accomodationChoice; }
             set 
             { 
-                roomType = value;
+                accomodationChoice = value;
                 CalculateRoomRate();
+                ReturnAccomodationRate();
             }
         }
 
@@ -99,16 +104,16 @@ namespace CSU_Conference_Serivices___Program_9
 
         #region "Constructor"
 
-        public Conference(string nameOfConference, int attendeesNumber, int nightsNumber, int accomodationChoice, bool internet, bool gym)
+        public Conference(string nameOfConference, int numberOfAttendees, int numberOfNights, AccomodationType accomodationChoice, bool internet, bool gym)
         {
             ConferenceName = nameOfConference;
-            NumberOfAttendees = attendeesNumber;
-            NumOfNights = nightsNumber;
+            NumberOfAttendees = numberOfAttendees;
+            NumberOfNights = numberOfNights;
             AccomodationChoice = accomodationChoice;
             InternetAccess = internet;
             RecCenterAccess = gym;
             
-            //totalCharge = CalculateRoomRate();
+            //TotalCharge = CalcConferenceCharges();
             
         }
 
@@ -118,51 +123,76 @@ namespace CSU_Conference_Serivices___Program_9
 
         #region "Instance Methods"
 
-        private double RoomChoice()
+        private decimal ReturnAccomodationRate()
         {
-            AccomodationChoice room = 0;
-
-            switch (room)
+            
+            switch (AccomodationChoice)
             {
-                case 1:
-                    room = 31.03;
+                case AccomodationType.Single:
+                    AccomodationCharge = (decimal)61.03;
                     break;
-                case 2:
+                case AccomodationType.Double:
+                    AccomodationCharge = (decimal)39.59;
                     break;
-                default:
+                default: AccomodationCharge = (decimal)73.45;
                     break;
 
 
             }
-            //return room;
+            return AccomodationCharge;
         }
         
-        private double CalculateRoomRate()
+        
+        
+        private void CalculateRoomRate()
         {
-            const double inetCharge = 6.12;
-            const double recCharge = 5.37;
-            const double roomDiscount = .10;
-            const double optSrvcDiscount = .05;
-                    
+            const decimal inetCharge = 6.12M;
+            const decimal recCharge = 5.37M;
+            const decimal roomDiscount = .10M;
+            const decimal optSrvcDiscount = .05M;
             
-            double accomodationCharge = RoomChoice() * numberOfAttendees * numOfNights;
-            double optInternet = inetCharge * numberOfAttendees * numOfNights;
-            double optGym = recCharge * numberOfAttendees * numOfNights;
-            double optServicesCharge = optInternet + optGym;
+            decimal accomodationTotal;
+            //decimal optInternet = inetCharge * numberOfAttendees * numberOfNights;
+            //decimal optGym = recCharge * numberOfAttendees * numberOfNights;
+            //decimal optServicesCharge;
+            //decimal TotalCharge;
+                
+                
+                 accomodationTotal = AccomodationCharge * NumberOfAttendees * NumberOfNights;
 
-            if (NumberOfAttendees > 50 && numOfNights > 7)
+
+            if (InternetAccess == true)
             {
-                Discount = (AccomodationCharge * roomDiscount) + (optServicesCharge * optSrvcDiscount);
+                internetAccessCharge = inetCharge * NumberOfAttendees * NumberOfNights;
+            }
+            else
+            {
+                internetAccessCharge = 0;
+            }
+
+            if (RecCenterAccess == true)
+            {
+                recCenterAccessCharge = recCharge * NumberOfAttendees * NumberOfNights;
+            }
+            else
+            {
+                recCenterAccessCharge = 0;
+            }
+
+            if (NumberOfAttendees >= 50 && NumberOfNights >= 7)
+            {
+                Discount = (accomodationTotal * roomDiscount) + (OptionalServicesCharge * optSrvcDiscount);
             }
             else
                 Discount = 0;
 
 
 
-            TotalCharge = AccomodationCharge + optServicesCharge - Discount;
+            OptionalServicesCharge = internetAccessCharge + recCenterAccessCharge;
+            TotalCharge = accomodationTotal + OptionalServicesCharge - Discount;
 
 
-            return CalculateRoomRate();
+            //return TotalCharge;
         }
 
     }
@@ -172,4 +202,3 @@ namespace CSU_Conference_Serivices___Program_9
 }
 
 
-#endregion

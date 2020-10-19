@@ -9,16 +9,16 @@ namespace PropertyTax___Program10
     #region "Enumeration"
     public enum LocationType
     {
-            City,
-            Suburb,
-            Rural
+        City,
+        Suburb,
+        Rural
     }
     #endregion
 
 
     class PropertyTax
     {
-        
+
 
 
 
@@ -59,7 +59,8 @@ namespace PropertyTax___Program10
 
         private void CalculateBuildingTax()
         {
-            if (BuildingSquareFootage <= 1000)  //greater than 1?
+            if (BuildingSquareFootage <= 1000)
+            //1 <= BuildingSquareFootage && 
             {
                 BuildingTax = (decimal)(BuildingSquareFootage * .71);
             }
@@ -67,7 +68,7 @@ namespace PropertyTax___Program10
             {
                 BuildingTax = (decimal)(((BuildingSquareFootage - 1000) * .73) + 710);
             }
-            else if (BuildingSquareFootage <=3000)
+            else if (BuildingSquareFootage <= 3000)
             {
                 BuildingTax = (decimal)(((BuildingSquareFootage - 2000) * .75) + 1440);
             }
@@ -75,11 +76,9 @@ namespace PropertyTax___Program10
             {
                 BuildingTax = (decimal)(((BuildingSquareFootage - 3000) * .77) + 2190);
             }
-            else if (BuildingSquareFootage > 4000)
-            {
-                BuildingTax = (decimal)(((BuildingSquareFootage - 4000) * .80) + 2960);
-            }
-            
+            else { BuildingTax = (decimal)(((BuildingSquareFootage - 4000) * .80) + 2960); }
+
+            //return BuildingTax;
         }
 
         private void CalculateLandTax()
@@ -100,10 +99,9 @@ namespace PropertyTax___Program10
             {
                 LandTax = (decimal)(((LandSquareFootage - 30000) * .1) + 1800);
             }
-            else if (LandSquareFootage > 40000)
-            {
-                LandTax = (decimal)(((LandSquareFootage - 40000) * .13) + 2800);
-            }
+            else { LandTax = (decimal)(((LandSquareFootage - 40000) * .13) + 2800); }
+
+            //return LandTax;
         }
 
         private void CalcBuildingTaxDeduction()
@@ -111,10 +109,13 @@ namespace PropertyTax___Program10
             DateTime current = DateTime.Now;
             BuildingAge = current.Year - YearBuilt;
 
-            if (BuildingAge >15 )
+            if (BuildingAge > 15)
             {
                 BuildingTaxDeduction = (Decimal)(BuildingAge * (.005 * (double)BuildingTax));
             }
+            else { BuildingTaxDeduction = 0; }
+
+            //return BuildingTaxDeduction;
         }
 
         private void CalcLandTaxDeduction()
@@ -125,16 +126,24 @@ namespace PropertyTax___Program10
                 {
                     LandTaxDeduction = LandTax * (decimal)0.0025;
                 }
-                else if (LandSquareFootage > 22250)
-                {
-                    LandTaxDeduction = LandTax * (decimal)0.0025;
-                }
-            else
-                {
-                    LandTaxDeduction = 0;
-                }
+                else LandTaxDeduction = LandTax * (decimal)0.0025;
             }
+            else { LandTaxDeduction = 0; }
+
+            //return LandTaxDeduction;
         }
+
+        private void CalcPropertyTaxTotal()
+        {
+            CalculateBuildingTax();
+            CalculateLandTax();
+            CalcBuildingTaxDeduction();
+            CalcLandTaxDeduction();
+        }
+    }
+}
+
+    
 
         #endregion
 
@@ -143,6 +152,7 @@ namespace PropertyTax___Program10
 
 
 
-    }
-}
+    
+
+
 #endregion

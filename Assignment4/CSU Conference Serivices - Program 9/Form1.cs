@@ -17,33 +17,115 @@ namespace CSU_Conference_Serivices___Program_9
             InitializeComponent();
         }
 
+        //declare class vars
+
+        private Conference aConference;
+        private string conferenceName;
+        private int numberAttendees, numberNights;
+        private bool internetYN, recCenterYN;
+        private AccomodationType accomodationChoice;
+
         private void btnCreateConf_Click(object sender, EventArgs e)
         {
+            // check Name Text box
+
+            if (tbxConferenceName.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("You must provide a Conference Name.", "Missing Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                tbxConferenceName.Focus();
+            }
+
+            AssignInputs();
+
+            //Conference aConference;
+
+            aConference = new Conference(conferenceName, numberAttendees, numberNights, accomodationChoice, internetYN, recCenterYN);
+
+            DisplayCharges();
+
+            //disable/enable controls
+
+            tbxConferenceName.Enabled = false;
+            btnCreateConf.Enabled = false;
+            btnModifyConf.Enabled = true;
+        }
+
+        private void btnModifyConf_Click(object sender, EventArgs e)
+        {
+            AssignInputs();
+
+            //reset properties
             
-            //declare local vars
+            aConference.AccomodationChoice = accomodationChoice;
+            aConference.NumberOfAttendees = numberAttendees;
+            aConference.NumberOfNights = numberNights;
+            aConference.InternetAccess = internetYN;
+            aConference.RecCenterAccess = recCenterYN;
 
-            string confName;
-            int numAttendees, numNights;
-            AccomodationChoice roomType;
-            bool internet, gym;
+            DisplayCharges();
+        }
+
+        private void AssignInputs()
+        {
+            conferenceName = tbxConferenceName.Text;
+            numberAttendees = Convert.ToInt32(nudNumAttendees.Value);
+            numberNights = Convert.ToInt32(nudNumNights.Value);
+
+            if (radSingle.Checked)
+            {
+                accomodationChoice = AccomodationType.Single;
+            }
+            else if (radDouble.Checked)
+            {
+                accomodationChoice = AccomodationType.Double;
+            }
+            else
+            {
+                accomodationChoice = AccomodationType.Suite;
+            }
+
+            internetYN = (cbxInternet.Checked) ? true : false;
+            recCenterYN = (cbxGym.Checked) ? true : false;
+        }
+
+        private void DisplayCharges()
+        {
+            string strCharges = $" Accomodation Charge: {aConference.AccomodationCharge.ToString("c2")} \n Optional Services Charge: {aConference.OptionalServicesCharge.ToString("c2")} \n Discount: {aConference.Discount.ToString("c2")} \n Total Charges: {aConference.TotalCharge.ToString("c2")}";
+
+            lblCharges.Text = strCharges;
+        
+        }
+
+        
+
+
+
+
+
+        //string confName;
+        //    int numAttendees, numNights;
+        //    AccomodationType roomType;
+        //    bool internet, gym;
 
 
             
-            Conference aConference;
+            //Conference aConference;
             
                       
             
-            confName = tbxConferenceName.Text;
+        //    confName = tbxConferenceName.Text;
 
             
-            numAttendees = Convert.ToInt32(nudNumAttendees.Value);
-            numNights = Convert.ToInt32(nudNumNights.Value);
-            roomType = (radSingle.Checked) ? AccomodationChoice.SingleRoom : (radDouble.Checked) ? AccomodationChoice.DoubleRoom : AccomodationChoice.SuiteRoom;
-            //internet = (cbxInternet.Checked) ? Conference.I;
+        //    numAttendees = Convert.ToInt32(nudNumAttendees.Value);
+        //    numNights = Convert.ToInt32(nudNumNights.Value);
 
-            aConference = new Conference(confName, numAttendees, numNights, roomType, internet, gym);
+
+        //roomType = (radSingle.Checked) ? AccomodationChoice.SingleRoom : (radDouble.Checked) ? AccomodationChoice.DoubleRoom : AccomodationChoice.SuiteRoom;
+        //    //internet = (cbxInternet.Checked) ? Conference.I;
+
+        //    aConference = new Conference(confName, numAttendees, numNights, roomType, internet, gym);
 
 
         }
     }
-}
+

@@ -45,6 +45,9 @@
             this.cbxInternet = new System.Windows.Forms.CheckBox();
             this.cbxGym = new System.Windows.Forms.CheckBox();
             this.btnCreateConf = new System.Windows.Forms.Button();
+            this.btnModifyConf = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblCharges = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumAttendees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumNights)).BeginInit();
             this.SuspendLayout();
@@ -52,20 +55,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 46);
+            this.label1.Location = new System.Drawing.Point(22, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Conference Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 76);
+            this.label2.Location = new System.Drawing.Point(22, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "number of Attendees";
             // 
             // tbxConferenceName
             // 
@@ -205,11 +208,42 @@
             this.btnCreateConf.UseVisualStyleBackColor = true;
             this.btnCreateConf.Click += new System.EventHandler(this.btnCreateConf_Click);
             // 
+            // btnModifyConf
+            // 
+            this.btnModifyConf.Location = new System.Drawing.Point(231, 317);
+            this.btnModifyConf.Name = "btnModifyConf";
+            this.btnModifyConf.Size = new System.Drawing.Size(75, 23);
+            this.btnModifyConf.TabIndex = 17;
+            this.btnModifyConf.Text = "button2";
+            this.btnModifyConf.UseVisualStyleBackColor = true;
+            this.btnModifyConf.Click += new System.EventHandler(this.btnModifyConf_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(336, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "label9";
+            // 
+            // lblCharges
+            // 
+            this.lblCharges.AutoSize = true;
+            this.lblCharges.Location = new System.Drawing.Point(377, 53);
+            this.lblCharges.Name = "lblCharges";
+            this.lblCharges.Size = new System.Drawing.Size(41, 13);
+            this.lblCharges.TabIndex = 19;
+            this.lblCharges.Text = "label10";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCharges);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnModifyConf);
             this.Controls.Add(this.btnCreateConf);
             this.Controls.Add(this.cbxGym);
             this.Controls.Add(this.cbxInternet);
@@ -255,6 +289,9 @@
         private System.Windows.Forms.CheckBox cbxInternet;
         private System.Windows.Forms.CheckBox cbxGym;
         private System.Windows.Forms.Button btnCreateConf;
+        private System.Windows.Forms.Button btnModifyConf;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblCharges;
     }
 }
 
