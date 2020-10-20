@@ -36,7 +36,7 @@ namespace PropertyTax___Program10
 
             AssignInputs();
 
-            aPropertyTax = new PropertyTax(namePropertyOwner, buildingSquareFootage, landSquareFootage, yearBuilt, locationSetting);
+            
 
             
 
@@ -63,11 +63,15 @@ namespace PropertyTax___Program10
 
         private void AssignInputs()
         {
+            
+
             namePropertyOwner = tbxOwnersName.Text;
             buildingSquareFootage = Convert.ToInt32(nudBuildingSquareFootage.Value);
             landSquareFootage = Convert.ToInt32(nudLandSquareFootage.Value);
             yearBuilt = Convert.ToInt32(nudYear.Value);
 
+
+     
             if (radCity.Checked)
             {
                 locationSetting = LocationType.City;
@@ -80,6 +84,8 @@ namespace PropertyTax___Program10
             {
                 locationSetting = LocationType.Rural;
             }
+
+            aPropertyTax = new PropertyTax(namePropertyOwner, buildingSquareFootage, landSquareFootage, yearBuilt, locationSetting);
         }
 
         private void DisplayTax()

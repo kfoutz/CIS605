@@ -107,7 +107,7 @@ namespace PropertyTax___Program10
         private void CalcBuildingTaxDeduction()
         {
             DateTime current = DateTime.Now;
-            BuildingAge = current.Year - YearBuilt;
+            BuildingAge = 20;//current.Year - YearBuilt;
 
             if (BuildingAge > 15)
             {
@@ -136,6 +136,7 @@ namespace PropertyTax___Program10
         private void CalcPropertyTaxTotal()
         {
             CalculateBuildingTax();
+
             CalculateLandTax();
             CalcBuildingTaxDeduction();
             CalcLandTaxDeduction();
