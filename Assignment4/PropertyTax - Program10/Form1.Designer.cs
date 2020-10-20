@@ -118,7 +118,7 @@
             // radSuburb
             // 
             this.radSuburb.AutoSize = true;
-            this.radSuburb.Location = new System.Drawing.Point(153, 257);
+            this.radSuburb.Location = new System.Drawing.Point(86, 257);
             this.radSuburb.Name = "radSuburb";
             this.radSuburb.Size = new System.Drawing.Size(59, 17);
             this.radSuburb.TabIndex = 7;
@@ -129,7 +129,7 @@
             // radRural
             // 
             this.radRural.AutoSize = true;
-            this.radRural.Location = new System.Drawing.Point(305, 257);
+            this.radRural.Location = new System.Drawing.Point(151, 257);
             this.radRural.Name = "radRural";
             this.radRural.Size = new System.Drawing.Size(50, 17);
             this.radRural.TabIndex = 8;
@@ -139,14 +139,14 @@
             // 
             // tbxOwnersName
             // 
-            this.tbxOwnersName.Location = new System.Drawing.Point(204, 83);
+            this.tbxOwnersName.Location = new System.Drawing.Point(175, 83);
             this.tbxOwnersName.Name = "tbxOwnersName";
             this.tbxOwnersName.Size = new System.Drawing.Size(100, 20);
             this.tbxOwnersName.TabIndex = 9;
             // 
             // nudBuildingSquareFootage
             // 
-            this.nudBuildingSquareFootage.Location = new System.Drawing.Point(204, 123);
+            this.nudBuildingSquareFootage.Location = new System.Drawing.Point(175, 123);
             this.nudBuildingSquareFootage.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -158,7 +158,7 @@
             // 
             // nudLandSquareFootage
             // 
-            this.nudLandSquareFootage.Location = new System.Drawing.Point(204, 155);
+            this.nudLandSquareFootage.Location = new System.Drawing.Point(175, 155);
             this.nudLandSquareFootage.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -170,7 +170,7 @@
             // 
             // nudYear
             // 
-            this.nudYear.Location = new System.Drawing.Point(204, 185);
+            this.nudYear.Location = new System.Drawing.Point(175, 185);
             this.nudYear.Maximum = new decimal(new int[] {
             2099,
             0,
@@ -182,7 +182,7 @@
             // 
             // btnCreateTax
             // 
-            this.btnCreateTax.Location = new System.Drawing.Point(458, 33);
+            this.btnCreateTax.Location = new System.Drawing.Point(345, 14);
             this.btnCreateTax.Name = "btnCreateTax";
             this.btnCreateTax.Size = new System.Drawing.Size(75, 51);
             this.btnCreateTax.TabIndex = 13;
@@ -193,15 +193,14 @@
             // lblTaxes
             // 
             this.lblTaxes.AutoSize = true;
-            this.lblTaxes.Location = new System.Drawing.Point(477, 138);
+            this.lblTaxes.Location = new System.Drawing.Point(342, 114);
             this.lblTaxes.Name = "lblTaxes";
-            this.lblTaxes.Size = new System.Drawing.Size(35, 13);
+            this.lblTaxes.Size = new System.Drawing.Size(0, 13);
             this.lblTaxes.TabIndex = 14;
-            this.lblTaxes.Text = "label7";
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(458, 90);
+            this.btnReset.Location = new System.Drawing.Point(302, 273);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 28);
             this.btnReset.TabIndex = 15;
@@ -211,7 +210,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(458, 302);
+            this.btnExit.Location = new System.Drawing.Point(392, 273);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 28);
             this.btnExit.TabIndex = 16;
@@ -223,7 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(590, 343);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblTaxes);
@@ -243,6 +242,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudBuildingSquareFootage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLandSquareFootage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudYear)).EndInit();

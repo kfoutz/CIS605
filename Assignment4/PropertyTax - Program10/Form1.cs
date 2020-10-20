@@ -61,6 +61,12 @@ namespace PropertyTax___Program10
             this.Close();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            radCity.Checked = true;
+
+        }
+
         private void AssignInputs()
         {
             

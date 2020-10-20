@@ -53,14 +53,19 @@ namespace PropertyTax___Program10
             YearBuilt = yearBuilt;
             PropertyLocation = propertyLocation;
 
+            //CalculateBuildingTax();
+            //CalculateLandTax();
+            //CalcBuildingTaxDeduction();
+            //CalcLandTaxDeduction();
+            CalcPropertyTaxTotal();
         }
 
         #region "Private Methods"
 
         private void CalculateBuildingTax()
         {
-            if (BuildingSquareFootage <= 1000)
-            //1 <= BuildingSquareFootage && 
+            if (1 <= BuildingSquareFootage && BuildingSquareFootage <= 1000)
+             
             {
                 BuildingTax = (decimal)(BuildingSquareFootage * .71);
             }
@@ -78,7 +83,7 @@ namespace PropertyTax___Program10
             }
             else { BuildingTax = (decimal)(((BuildingSquareFootage - 4000) * .80) + 2960); }
 
-            //return BuildingTax;
+            
         }
 
         private void CalculateLandTax()
@@ -101,13 +106,13 @@ namespace PropertyTax___Program10
             }
             else { LandTax = (decimal)(((LandSquareFootage - 40000) * .13) + 2800); }
 
-            //return LandTax;
+            
         }
 
         private void CalcBuildingTaxDeduction()
         {
             DateTime current = DateTime.Now;
-            BuildingAge = 20;//current.Year - YearBuilt;
+            BuildingAge = current.Year - YearBuilt;
 
             if (BuildingAge > 15)
             {
@@ -115,7 +120,7 @@ namespace PropertyTax___Program10
             }
             else { BuildingTaxDeduction = 0; }
 
-            //return BuildingTaxDeduction;
+            
         }
 
         private void CalcLandTaxDeduction()
@@ -126,20 +131,22 @@ namespace PropertyTax___Program10
                 {
                     LandTaxDeduction = LandTax * (decimal)0.0025;
                 }
-                else LandTaxDeduction = LandTax * (decimal)0.0025;
+                else LandTaxDeduction = LandTax * (decimal)0.0175;
             }
             else { LandTaxDeduction = 0; }
 
-            //return LandTaxDeduction;
+            
         }
 
         private void CalcPropertyTaxTotal()
         {
-            CalculateBuildingTax();
 
+            CalculateBuildingTax();
             CalculateLandTax();
             CalcBuildingTaxDeduction();
             CalcLandTaxDeduction();
+            TotalPropertyTax = (BuildingTax + LandTax) - (LandTaxDeduction + BuildingTaxDeduction);
+
         }
     }
 }

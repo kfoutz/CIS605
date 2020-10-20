@@ -25,15 +25,18 @@ namespace CSU_Conference_Serivices___Program_9
         private bool internetYN, recCenterYN;
         private AccomodationType accomodationChoice;
 
+       
+
         private void btnCreateConf_Click(object sender, EventArgs e)
         {
             // check Name Text box
-
+            
+          
             if (tbxConferenceName.Text.Trim() == string.Empty)
             {
                 MessageBox.Show("You must provide a Conference Name.", "Missing Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tbxConferenceName.Focus();
-            }
+            } 
 
             AssignInputs();
 
@@ -63,6 +66,17 @@ namespace CSU_Conference_Serivices___Program_9
             aConference.RecCenterAccess = recCenterYN;
 
             DisplayCharges();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            btnModifyConf.Enabled = false;
+            radSuite.Checked = true;
         }
 
         private void AssignInputs()
