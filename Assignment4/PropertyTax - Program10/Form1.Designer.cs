@@ -160,7 +160,7 @@
             // 
             this.nudLandSquareFootage.Location = new System.Drawing.Point(175, 155);
             this.nudLandSquareFootage.Maximum = new decimal(new int[] {
-            1000000,
+            1000000000,
             0,
             0,
             0});
