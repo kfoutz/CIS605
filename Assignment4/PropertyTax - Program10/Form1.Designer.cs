@@ -45,6 +45,7 @@
             this.lblTaxes = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudBuildingSquareFootage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLandSquareFootage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudYear)).BeginInit();
@@ -242,11 +243,21 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 318);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Programmed by KCF";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 343);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblTaxes);
@@ -295,6 +306,7 @@
         private System.Windows.Forms.Label lblTaxes;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label7;
     }
 }
 

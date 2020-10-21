@@ -8,3 +8,12 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\PropertyT
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax - Program10.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax - Program10.pdb
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax___Program10.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\bin\Debug\PropertyTax - Program10.exe.config
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\bin\Debug\PropertyTax - Program10.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\bin\Debug\PropertyTax - Program10.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax - Program10.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax___Program10.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax___Program10.Properties.Resources.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax - Program10.csproj.GenerateResource.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax - Program10.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment4\PropertyTax - Program10\obj\Debug\PropertyTax - Program10.pdb

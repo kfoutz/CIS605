@@ -36,7 +36,9 @@ namespace CSU_Conference_Serivices___Program_9
             {
                 MessageBox.Show("You must provide a Conference Name.", "Missing Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tbxConferenceName.Focus();
+                return;
             } 
+
 
             AssignInputs();
 
