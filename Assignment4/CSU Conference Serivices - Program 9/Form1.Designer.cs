@@ -48,6 +48,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumAttendees)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumNights)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -82,6 +83,11 @@
             // nudNumAttendees
             // 
             this.nudNumAttendees.Location = new System.Drawing.Point(130, 73);
+            this.nudNumAttendees.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
             this.nudNumAttendees.Minimum = new decimal(new int[] {
             20,
             0,
@@ -108,6 +114,11 @@
             // nudNumNights
             // 
             this.nudNumNights.Location = new System.Drawing.Point(130, 109);
+            this.nudNumNights.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
             this.nudNumNights.Minimum = new decimal(new int[] {
             2,
             0,
@@ -264,11 +275,21 @@
             this.label4.TabIndex = 23;
             this.label4.Text = "Reservation Summary";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(281, 404);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Provided by: KCF";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(480, 450);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.groupBox2);
@@ -318,6 +339,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
     }
 }
 

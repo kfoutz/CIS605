@@ -28,6 +28,7 @@ namespace PropertyTax___Program10
             {
                 MessageBox.Show("You must provide an owner's name.", "Missing Data", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 tbxOwnersName.Focus();
+                return;
             
             //if (nudYear.Value > DateTime.Now)
             }
@@ -46,6 +47,8 @@ namespace PropertyTax___Program10
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
             nudBuildingSquareFootage.Value = 0;
             nudLandSquareFootage.Value = 0;
             nudYear.Value = 0;
@@ -64,6 +67,7 @@ namespace PropertyTax___Program10
         private void Form1_Load(object sender, EventArgs e)
         {
             radCity.Checked = true;
+            nudYear.Maximum = DateTime.Today.Year;
 
         }
 

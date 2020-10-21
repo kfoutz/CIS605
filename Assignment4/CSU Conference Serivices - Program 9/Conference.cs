@@ -20,9 +20,13 @@ namespace CSU_Conference_Serivices___Program_9
 
         #region "Constants"
 
-        //const decimal Single = 61.03;
-        //const decimal Double = 39.59;
-        //const decimal Suite = 73.45;
+        const decimal Single = 61.03M;
+        const decimal Double = 39.59M;
+        const decimal Suite = 73.45M;
+        const decimal inetCharge = 6.12M;
+        const decimal recCharge = 5.37M;
+        const decimal roomDiscount = .10M;
+        const decimal optSrvcDiscount = .05M;
 
         #endregion
 
@@ -52,7 +56,7 @@ namespace CSU_Conference_Serivices___Program_9
             { 
                 numberOfAttendees = value;
                 CalculateRoomRate();
-                ReturnAccomodationRate();
+                
             }
 
         }
@@ -64,7 +68,7 @@ namespace CSU_Conference_Serivices___Program_9
             {
                 numberOfNights = value;
                 CalculateRoomRate();
-                ReturnAccomodationRate();
+               
             }
         }
 
@@ -75,7 +79,7 @@ namespace CSU_Conference_Serivices___Program_9
             { 
                 accomodationChoice = value;
                 CalculateRoomRate();
-                ReturnAccomodationRate();
+                
             }
         }
 
@@ -113,7 +117,7 @@ namespace CSU_Conference_Serivices___Program_9
             InternetAccess = internet;
             RecCenterAccess = gym;
             
-            //TotalCharge = CalcConferenceCharges();
+            
             
         }
 
@@ -125,41 +129,29 @@ namespace CSU_Conference_Serivices___Program_9
 
         private decimal ReturnAccomodationRate()
         {
-            
+            decimal roomRate;
             switch (AccomodationChoice)
             {
                 case AccomodationType.Single:
-                    AccomodationCharge = (decimal)61.03;
+                    roomRate = Single;
                     break;
                 case AccomodationType.Double:
-                    AccomodationCharge = (decimal)39.59;
+                    roomRate = Double;
                     break;
-                default: AccomodationCharge = (decimal)73.45;
+                default: roomRate = Suite;
                     break;
 
 
             }
-            return AccomodationCharge;
+            
+            return roomRate;
         }
         
         
         
         private void CalculateRoomRate()
         {
-            const decimal inetCharge = 6.12M;
-            const decimal recCharge = 5.37M;
-            const decimal roomDiscount = .10M;
-            const decimal optSrvcDiscount = .05M;
-            
-            decimal accomodationTotal;
-            //decimal optInternet = inetCharge * numberOfAttendees * numberOfNights;
-            //decimal optGym = recCharge * numberOfAttendees * numberOfNights;
-            //decimal optServicesCharge;
-            //decimal TotalCharge;
-                
-                
-                 accomodationTotal = AccomodationCharge * NumberOfAttendees * NumberOfNights;
-
+            AccomodationCharge =  ReturnAccomodationRate()* NumberOfAttendees * NumberOfNights;
 
             if (InternetAccess == true)
             {
@@ -181,7 +173,7 @@ namespace CSU_Conference_Serivices___Program_9
 
             if (NumberOfAttendees >= 50 && NumberOfNights >= 7)
             {
-                Discount = (accomodationTotal * roomDiscount) + (OptionalServicesCharge * optSrvcDiscount);
+                Discount = (AccomodationCharge * roomDiscount) + (OptionalServicesCharge * optSrvcDiscount);
             }
             else
                 Discount = 0;
@@ -189,10 +181,8 @@ namespace CSU_Conference_Serivices___Program_9
 
 
             OptionalServicesCharge = internetAccessCharge + recCenterAccessCharge;
-            TotalCharge = accomodationTotal + OptionalServicesCharge - Discount;
+            TotalCharge = (AccomodationCharge + OptionalServicesCharge) - Discount;
 
-
-            //return TotalCharge;
         }
 
     }

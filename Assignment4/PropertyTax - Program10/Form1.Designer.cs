@@ -140,6 +140,7 @@
             // tbxOwnersName
             // 
             this.tbxOwnersName.Location = new System.Drawing.Point(175, 83);
+            this.tbxOwnersName.MaxLength = 25;
             this.tbxOwnersName.Name = "tbxOwnersName";
             this.tbxOwnersName.Size = new System.Drawing.Size(100, 20);
             this.tbxOwnersName.TabIndex = 9;
@@ -152,9 +153,20 @@
             0,
             0,
             0});
+            this.nudBuildingSquareFootage.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudBuildingSquareFootage.Name = "nudBuildingSquareFootage";
             this.nudBuildingSquareFootage.Size = new System.Drawing.Size(120, 20);
             this.nudBuildingSquareFootage.TabIndex = 10;
+            this.nudBuildingSquareFootage.ThousandsSeparator = true;
+            this.nudBuildingSquareFootage.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // nudLandSquareFootage
             // 
@@ -164,15 +176,27 @@
             0,
             0,
             0});
+            this.nudLandSquareFootage.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudLandSquareFootage.Name = "nudLandSquareFootage";
             this.nudLandSquareFootage.Size = new System.Drawing.Size(120, 20);
             this.nudLandSquareFootage.TabIndex = 11;
+            this.nudLandSquareFootage.ThousandsSeparator = true;
+            this.nudLandSquareFootage.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // nudYear
             // 
+            this.nudYear.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.nudYear.Location = new System.Drawing.Point(175, 185);
             this.nudYear.Maximum = new decimal(new int[] {
-            2099,
+            3000,
             0,
             0,
             0});
@@ -240,6 +264,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Form1";
             this.Text = "Property Tax Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -140,13 +140,13 @@ namespace PropertyTax___Program10
 
         private void CalcPropertyTaxTotal()
         {
-
+            
             CalculateBuildingTax();
             CalculateLandTax();
             CalcBuildingTaxDeduction();
             CalcLandTaxDeduction();
             TotalPropertyTax = (BuildingTax + LandTax) - (LandTaxDeduction + BuildingTaxDeduction);
-
+            
         }
     }
 }
