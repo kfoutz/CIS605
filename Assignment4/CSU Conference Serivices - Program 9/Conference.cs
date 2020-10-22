@@ -178,7 +178,7 @@ namespace CSU_Conference_Serivices___Program_9
             else
                 Discount = 0;
 
-
+            
 
             OptionalServicesCharge = internetAccessCharge + recCenterAccessCharge;
             TotalCharge = (AccomodationCharge + OptionalServicesCharge) - Discount;
