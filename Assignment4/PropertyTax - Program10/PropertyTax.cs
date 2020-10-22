@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 4 Program 10
+ * Date:            October 2020
+ * Developed By:    KCF
+ * Class Name:      PropertyTax
+ * Purpose:         Demos public / private class scope, ennumeration, boolean form controls, if statements, switches
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +27,6 @@ namespace PropertyTax___Program10
 
     class PropertyTax
     {
-
-
-
-
-
 
         #region "Instance Properties"
 

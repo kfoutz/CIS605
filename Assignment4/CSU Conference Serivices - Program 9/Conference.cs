@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 4 Program 09
+ * Date:            October 2020
+ * Developed By:    KCF
+ * Class Name:      Conference
+ * Purpose:         Demos public / private class scope, ennumeration, boolean form controls
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
