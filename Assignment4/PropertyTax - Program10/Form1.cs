@@ -71,6 +71,12 @@ namespace PropertyTax___Program10
 
         }
 
+        private void nudBuildingSquareFootage_ValueChanged(object sender, EventArgs e)
+        {
+            //nudBuildingSquareFootage.Select();
+            nudBuildingSquareFootage.Select(1, nudBuildingSquareFootage.Value.ToString().Length);
+        }
+
         private void AssignInputs()
         {
             

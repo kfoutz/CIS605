@@ -168,6 +168,7 @@
             0,
             0,
             0});
+            this.nudBuildingSquareFootage.ValueChanged += new System.EventHandler(this.nudBuildingSquareFootage_ValueChanged);
             // 
             // nudLandSquareFootage
             // 
