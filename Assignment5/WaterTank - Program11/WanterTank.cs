@@ -43,7 +43,7 @@ namespace WaterTank___Program11
         
         
         
-        public void AddWater()
+        public string AddWater()
 
         {
             if (CurrentWaterLevel < MaximumWaterCapicity)
