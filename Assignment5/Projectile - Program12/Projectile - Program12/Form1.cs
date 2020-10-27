@@ -37,6 +37,14 @@ namespace Projectile___Program12
             lblHangTime.Text = Convert.ToString(aProjectile.AtTime);
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lblMaxHeight.Text = null;
+            lblHangTime.Text = null;
+            nudInitialHeight.Value = 0;
+            nudInitialVelocity.Value = 0;
+        }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();

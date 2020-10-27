@@ -38,6 +38,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialVelocity)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 71);
+            this.label1.Location = new System.Drawing.Point(21, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 128);
+            this.label2.Location = new System.Drawing.Point(21, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 1;
@@ -62,7 +64,7 @@
             // 
             // nudInitialHeight
             // 
-            this.nudInitialHeight.Location = new System.Drawing.Point(126, 71);
+            this.nudInitialHeight.Location = new System.Drawing.Point(101, 40);
             this.nudInitialHeight.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -74,7 +76,7 @@
             // 
             // nudInitialVelocity
             // 
-            this.nudInitialVelocity.Location = new System.Drawing.Point(126, 121);
+            this.nudInitialVelocity.Location = new System.Drawing.Point(101, 90);
             this.nudInitialVelocity.Name = "nudInitialVelocity";
             this.nudInitialVelocity.Size = new System.Drawing.Size(120, 20);
             this.nudInitialVelocity.TabIndex = 3;
@@ -82,7 +84,7 @@
             // lblMaxHeight
             // 
             this.lblMaxHeight.AutoSize = true;
-            this.lblMaxHeight.Location = new System.Drawing.Point(290, 73);
+            this.lblMaxHeight.Location = new System.Drawing.Point(265, 42);
             this.lblMaxHeight.Name = "lblMaxHeight";
             this.lblMaxHeight.Size = new System.Drawing.Size(0, 13);
             this.lblMaxHeight.TabIndex = 4;
@@ -90,16 +92,16 @@
             // lblHangTime
             // 
             this.lblHangTime.AutoSize = true;
-            this.lblHangTime.Location = new System.Drawing.Point(398, 71);
+            this.lblHangTime.Location = new System.Drawing.Point(356, 40);
             this.lblHangTime.Name = "lblHangTime";
             this.lblHangTime.Size = new System.Drawing.Size(0, 13);
             this.lblHangTime.TabIndex = 5;
             // 
             // btnCalcMaxHeight
             // 
-            this.btnCalcMaxHeight.Location = new System.Drawing.Point(49, 197);
+            this.btnCalcMaxHeight.Location = new System.Drawing.Point(65, 129);
             this.btnCalcMaxHeight.Name = "btnCalcMaxHeight";
-            this.btnCalcMaxHeight.Size = new System.Drawing.Size(75, 55);
+            this.btnCalcMaxHeight.Size = new System.Drawing.Size(75, 23);
             this.btnCalcMaxHeight.TabIndex = 6;
             this.btnCalcMaxHeight.Text = "Calculate";
             this.btnCalcMaxHeight.UseVisualStyleBackColor = true;
@@ -107,7 +109,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(49, 290);
+            this.btnExit.Location = new System.Drawing.Point(376, 129);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 8;
@@ -118,7 +120,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(290, 48);
+            this.label3.Location = new System.Drawing.Point(265, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 9;
@@ -127,17 +129,38 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(398, 48);
+            this.label4.Location = new System.Drawing.Point(356, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Hang Time";
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(146, 129);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 11;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "KCF";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 337);
+            this.ClientSize = new System.Drawing.Size(467, 173);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnExit);
@@ -149,7 +172,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Projectile Calculation";
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialVelocity)).EndInit();
             this.ResumeLayout(false);
@@ -169,6 +192,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label label5;
     }
 }
 
