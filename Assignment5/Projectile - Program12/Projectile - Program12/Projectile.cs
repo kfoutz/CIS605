@@ -38,11 +38,11 @@ namespace Projectile___Program12
         {
             get
             {
-                return atTime;
+                return Math.Round(atTime, 3);
             }
             set
             {
-                atTime = value;
+                atTime=value;
             }
         }
         
@@ -92,6 +92,7 @@ namespace Projectile___Program12
                 atTime += .1;                
             }
             while (feet > 0);
+            
             return atTime;
         }
         #endregion

@@ -31,10 +31,11 @@ namespace Projectile___Program12
             InitialVelocity = Convert.ToInt32(nudInitialVelocity.Value);
             
             aProjectile = new Projectile(InitialVelocity, InitialHeight);
-            
+
 
             lblMaxHeight.Text = Convert.ToString(aProjectile.MaxHeight);
             lblHangTime.Text = Convert.ToString(aProjectile.AtTime);
+
         }
 
         private void btnReset_Click(object sender, EventArgs e)
