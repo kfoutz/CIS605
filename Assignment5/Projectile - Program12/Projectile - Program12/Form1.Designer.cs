@@ -32,11 +32,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.nudInitialHeight = new System.Windows.Forms.NumericUpDown();
             this.nudInitialVelocity = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblInfo = new System.Windows.Forms.Label();
+            this.lblMaxHeight = new System.Windows.Forms.Label();
+            this.lblHangTime = new System.Windows.Forms.Label();
             this.btnCalcMaxHeight = new System.Windows.Forms.Button();
-            this.btnCalcHangTime = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialVelocity)).BeginInit();
             this.SuspendLayout();
@@ -78,23 +79,21 @@
             this.nudInitialVelocity.Size = new System.Drawing.Size(120, 20);
             this.nudInitialVelocity.TabIndex = 3;
             // 
-            // label3
+            // lblMaxHeight
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(338, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.lblMaxHeight.AutoSize = true;
+            this.lblMaxHeight.Location = new System.Drawing.Point(290, 73);
+            this.lblMaxHeight.Name = "lblMaxHeight";
+            this.lblMaxHeight.Size = new System.Drawing.Size(0, 13);
+            this.lblMaxHeight.TabIndex = 4;
             // 
-            // lblInfo
+            // lblHangTime
             // 
-            this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(421, 78);
-            this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(35, 13);
-            this.lblInfo.TabIndex = 5;
-            this.lblInfo.Text = "label4";
+            this.lblHangTime.AutoSize = true;
+            this.lblHangTime.Location = new System.Drawing.Point(398, 71);
+            this.lblHangTime.Name = "lblHangTime";
+            this.lblHangTime.Size = new System.Drawing.Size(0, 13);
+            this.lblHangTime.TabIndex = 5;
             // 
             // btnCalcMaxHeight
             // 
@@ -102,19 +101,9 @@
             this.btnCalcMaxHeight.Name = "btnCalcMaxHeight";
             this.btnCalcMaxHeight.Size = new System.Drawing.Size(75, 55);
             this.btnCalcMaxHeight.TabIndex = 6;
-            this.btnCalcMaxHeight.Text = "Calculate Maximum Height";
+            this.btnCalcMaxHeight.Text = "Calculate";
             this.btnCalcMaxHeight.UseVisualStyleBackColor = true;
             this.btnCalcMaxHeight.Click += new System.EventHandler(this.btnCalcMaxHeight_Click);
-            // 
-            // btnCalcHangTime
-            // 
-            this.btnCalcHangTime.Location = new System.Drawing.Point(171, 197);
-            this.btnCalcHangTime.Name = "btnCalcHangTime";
-            this.btnCalcHangTime.Size = new System.Drawing.Size(75, 55);
-            this.btnCalcHangTime.TabIndex = 7;
-            this.btnCalcHangTime.Text = "Calculate Hang Time";
-            this.btnCalcHangTime.UseVisualStyleBackColor = true;
-            this.btnCalcHangTime.Click += new System.EventHandler(this.btnCalcHangTime_Click);
             // 
             // btnExit
             // 
@@ -124,17 +113,37 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(290, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Maximum Height";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(398, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Hang Time";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnCalcHangTime);
-            this.Controls.Add(this.btnCalcMaxHeight);
-            this.Controls.Add(this.lblInfo);
+            this.ClientSize = new System.Drawing.Size(526, 337);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnCalcMaxHeight);
+            this.Controls.Add(this.lblHangTime);
+            this.Controls.Add(this.lblMaxHeight);
             this.Controls.Add(this.nudInitialVelocity);
             this.Controls.Add(this.nudInitialHeight);
             this.Controls.Add(this.label2);
@@ -154,11 +163,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown nudInitialHeight;
         private System.Windows.Forms.NumericUpDown nudInitialVelocity;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Label lblMaxHeight;
+        private System.Windows.Forms.Label lblHangTime;
         private System.Windows.Forms.Button btnCalcMaxHeight;
-        private System.Windows.Forms.Button btnCalcHangTime;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -21,7 +21,7 @@ namespace Projectile___Program12
         Projectile aProjectile;
 
         int InitialHeight, InitialVelocity;
-        //double  maxHeight;
+        
 
        
 
@@ -31,19 +31,17 @@ namespace Projectile___Program12
             InitialVelocity = Convert.ToInt32(nudInitialVelocity.Value);
             
             aProjectile = new Projectile(InitialVelocity, InitialHeight);
-            //maxHeight = aProjectile.MaxHeight;
+            
 
-            lblInfo.Text = Convert.ToString(aProjectile.MaxHeight);
+            lblMaxHeight.Text = Convert.ToString(aProjectile.MaxHeight);
+            lblHangTime.Text = Convert.ToString(aProjectile.AtTime);
         }
 
-        private void btnCalcHangTime_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            InitialHeight = Convert.ToInt32(nudInitialHeight.Value);
-            InitialVelocity = Convert.ToInt32(nudInitialVelocity.Value);
-
-            aProjectile = new Projectile(InitialVelocity, InitialHeight);
-
-            lblInfo.Text = Convert.ToString(aProjectile.AtTime);
+            this.Close();
         }
+
+       
     }
 }
