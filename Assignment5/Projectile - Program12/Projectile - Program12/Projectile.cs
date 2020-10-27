@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace Projectile___Program12
         private double maxHeight;
         private double landTime;
         private double feet;
+        private double atTime;
+        private double maxHeightTime;
 
         #endregion
 
@@ -21,6 +24,7 @@ namespace Projectile___Program12
 
         public int InitialHeight { get; private set; }
         public int InitialVelocity { get; private set; }
+        //private double MaxHeightTime { get; set;  }
         public double LandTime
         {
             get
@@ -41,22 +45,22 @@ namespace Projectile___Program12
             set
             {
                 maxHeight = value;
-                //FindHeight();
+                //FindHeight(atTime);
             }
         }
-        public double Feet
+        public double AtTime
         {
             get
             {
-                return feet;
+                return atTime;
             }
             set
             {
-                feet = value;
-                //FindHeight();
+                atTime = value;
+                //FindHeight(atTime);
             }
         }
-
+        //private double Feet { get; set; }
 
                 #endregion
 
@@ -68,50 +72,70 @@ namespace Projectile___Program12
             InitialVelocity = initialVelocity;
             LandTime = landTime;
             MaxHeight = maxHeight;
-            Feet = feet;
+            //MaxHeightTime = maxHeightTime;
+            //Feet = feet;
             CalcMaxHeight();
             CalcLandTime();
+            FindHeight(atTime);
 
         }
 
         #endregion
 
         #region "Methods"
-        private double FindHeight(double time)
-        {
-           
-            double atTime = maxHeight;
-            time = atTime;
-            double feet;
 
-            feet = InitialHeight + (InitialVelocity * time) - (16 * Math.Pow(time, 2));
+
+        
+
+        private double FindHeight(double atTime)
+        {
+
+            //atTime = 1;
+            //time = atTime;
+            //double feet;
+
+            feet = InitialHeight + (InitialVelocity * atTime) - (16 * Math.Pow(atTime, 2));
 
             return feet;
         }
 
-
         private double CalcMaxHeight()
         {
-            
-              maxHeight = InitialVelocity / 32;
 
-            return maxHeight;
+            maxHeightTime = InitialVelocity / 32;
+
+            //maxHeightTime = atTime;
+
+            MaxHeight = FindHeight(maxHeightTime);
+
+
+
+
+            return MaxHeight;
         }
+
 
         private double CalcLandTime()
         {
-            double landTime = .01;
-            double feet;
-            feet=FindHeight(landTime);
-            //int i = 1;
-
+           
+           
+            //feet=FindHeight(atTime);
+           
+            
+            
             do
             {
-                FindHeight(landTime);
-                ++landTime;
+                //AtTime = MaxHeight+.1;
+                //double landTime = .1;
+                //landTime = atTime;
+                feet = FindHeight(atTime);
+                FindHeight(atTime);
+                
+                atTime += .1;
+                //return feet, landTime;
             }
             while (feet > 0);
-            return landTime;
+            return atTime;
        
 
 

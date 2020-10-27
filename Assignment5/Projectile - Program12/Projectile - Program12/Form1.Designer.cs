@@ -36,6 +36,7 @@
             this.lblInfo = new System.Windows.Forms.Label();
             this.btnCalcMaxHeight = new System.Windows.Forms.Button();
             this.btnCalcHangTime = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialVelocity)).BeginInit();
             this.SuspendLayout();
@@ -45,22 +46,27 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(46, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Initial Velocity";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(46, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Initial Height";
             // 
             // nudInitialHeight
             // 
             this.nudInitialHeight.Location = new System.Drawing.Point(126, 71);
+            this.nudInitialHeight.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nudInitialHeight.Name = "nudInitialHeight";
             this.nudInitialHeight.Size = new System.Drawing.Size(120, 20);
             this.nudInitialHeight.TabIndex = 2;
@@ -110,11 +116,21 @@
             this.btnCalcHangTime.UseVisualStyleBackColor = true;
             this.btnCalcHangTime.Click += new System.EventHandler(this.btnCalcHangTime_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(49, 290);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 8;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalcHangTime);
             this.Controls.Add(this.btnCalcMaxHeight);
             this.Controls.Add(this.lblInfo);
@@ -142,6 +158,7 @@
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Button btnCalcMaxHeight;
         private System.Windows.Forms.Button btnCalcHangTime;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

@@ -1,0 +1,10 @@
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\bin\Debug\SuperBowls - Program13.exe.config
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\bin\Debug\SuperBowls - Program13.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\bin\Debug\SuperBowls - Program13.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csprojAssemblyReference.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls___Program13.Form1.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls___Program13.Properties.Resources.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csproj.GenerateResource.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csproj.CoreCompileInputs.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.pdb

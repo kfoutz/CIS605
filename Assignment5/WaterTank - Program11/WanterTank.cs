@@ -11,7 +11,7 @@ namespace WaterTank___Program11
 
         #region "Constants"
 
-        const double addwater = 50; 
+        //const double addwater = 50; 
 
         #region "Auto-Implemented Properties"
 
@@ -43,19 +43,20 @@ namespace WaterTank___Program11
         
         
         
-        public string AddWater()
+        public string AddWater(int litersToAdd)
 
         {
             if (CurrentWaterLevel < MaximumWaterCapicity)
-            
+
 
                 do
                 {
                     ++CurrentWaterLevel;
                 }
                 while (CurrentWaterLevel < MaximumWaterCapicity);
+
             
-            else Console.WriteLine( "")
+            return AddWater;
         }
 
 
