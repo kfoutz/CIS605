@@ -31,7 +31,7 @@ namespace WaterTank___Program11
         {
             //string strMaxCap = Convert.ToString(TankCapacity);
 
-            tbxMaximumCapacity.Text = Convert.ToString(TankCapacity);
+
 
             aWaterTank = new WaterTank(Radius, Depth, WaterLevel, TankCapacity);
         }
@@ -42,6 +42,8 @@ namespace WaterTank___Program11
             Depth = Convert.ToDouble(nudDepth.Value);
 
             aWaterTank = new WaterTank(Radius, Depth, WaterLevel, TankCapacity);
+
+            Convert.ToString(TankCapacity) = tbxMaximumCapacity.Text;
         }
     }
 }
