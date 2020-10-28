@@ -42,15 +42,15 @@ namespace Projectile___Program12
             }
             set
             {
-                atTime=value;
+                atTime = value;
             }
         }
-        
-                #endregion
 
-                #region "Constructor"
+        #endregion
 
-                public Projectile(int initialHeight, int initialVelocity)
+        #region "Constructor"
+
+        public Projectile(int initialHeight, int initialVelocity)
         {
             InitialHeight = initialHeight;
             InitialVelocity = initialVelocity;

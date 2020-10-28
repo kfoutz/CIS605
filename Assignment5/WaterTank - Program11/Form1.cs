@@ -16,5 +16,32 @@ namespace WaterTank___Program11
         {
             InitializeComponent();
         }
+
+        WaterTank aWaterTank;
+
+        double Radius, Depth;
+        int WaterLevel, TankCapacity;
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMaximumCapacity_Click(object sender, EventArgs e)
+        {
+            //string strMaxCap = Convert.ToString(TankCapacity);
+
+            tbxMaximumCapacity.Text = Convert.ToString(TankCapacity);
+
+            aWaterTank = new WaterTank(Radius, Depth, WaterLevel, TankCapacity);
+        }
+
+        private void btnCreateWaterTank_Click(object sender, EventArgs e)
+        {
+            Radius = Convert.ToDouble(nudRadius.Value);
+            Depth = Convert.ToDouble(nudDepth.Value);
+
+            aWaterTank = new WaterTank(Radius, Depth, WaterLevel, TankCapacity);
+        }
     }
 }
