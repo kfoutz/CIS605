@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WaterTank___Program11
 {
@@ -14,10 +15,12 @@ namespace WaterTank___Program11
         #region "Constants"
 
         //const double addwater = 50; 
+        const int minWater = 0;
+        const int maxRadiusDepth = 6700;
         #endregion
 
         #region "Parameters"
-        private int litersToAdd;
+        //public int LitersToAdd;
         
 
 
@@ -33,13 +36,13 @@ namespace WaterTank___Program11
 
         #region "Constructor"
 
-        public WaterTank(double radius, double depth, int waterLevel, int tankCapacity)
+        public WaterTank(double radius, double depth)
         {
             Radius = radius;
             Depth = depth;
-            WaterLevel = waterLevel;
-            TankCapacity = tankCapacity;
-
+            //WaterLevel = waterLevel;
+            //TankCapacity = tankCapacity;
+            //LitersToAdd = litersToAdd;
             CalcTankCapacity();
             //AddWater(litersToAdd);
             //WithdrawWater(litersToAdd);
@@ -47,76 +50,93 @@ namespace WaterTank___Program11
 
         #endregion
 
-        
+
         #region "Methods"
 
         private int CalcTankCapacity()
-        {
-            TankCapacity = Convert.ToInt32(Math.Floor(Math.PI * Math.Pow(Radius, 2) * Depth * 1000));
-            return Convert.ToInt32(TankCapacity);
-        }
         
+            { 
+                TankCapacity = Convert.ToInt32(Math.Floor(Math.PI * Math.Pow(Radius, 2) * Depth * 1000));
+                return Convert.ToInt32(TankCapacity);
+            }
+
         
-        
-        public string AddWater(int litersToAdd)
-        {
-            if (WaterLevel < TankCapacity  && litersToAdd>0)
-               
-                do
+
+            public string AddWater(int litersToAdd)
+            {
+                int currentToMax = (int)(TankCapacity - WaterLevel);
+
+                string message = string.Empty;
+
+
+                if (WaterLevel + litersToAdd < TankCapacity)
+
                 {
                     WaterLevel += litersToAdd;
+                    message = $"Water level increased by {litersToAdd}. \n Current water level is {WaterLevel} liters.\n Water may be increased by {currentToMax} liters.";
                 }
-                while (WaterLevel < TankCapacity);
-                return Convert.ToString(WaterLevel);
-            
-        }
+                else
+                {
+                    message = $"You cannot add {litersToAdd} liters without overflowing. You may add {currentToMax} liters.";
+                }
 
-        public bool DrainTank(int litersPerSecond)
-        {
-            if (WaterLevel == 0)
-                return false;
-            else
-            
-            do
-            {
-                WaterLevel-= litersPerSecond;
+                return message;
+
             }
-            while (WaterLevel >= 0);
-
-            return true;
-
-        }
-
         
 
         public string WithdrawWater(int litersToWithdraw)
         {
-            if (WaterLevel >= 0 && litersToWithdraw>0)
-                do
-                {
-                    WaterLevel -= litersToWithdraw;
-                }
-                while (WaterLevel >= 0);
-            return Convert.ToString(WaterLevel);
+            int currentToMin = (WaterLevel - minWater);
 
-           
+            string message = string.Empty;
+
+            if (WaterLevel - litersToWithdraw > minWater)
+            {
+                WaterLevel -= litersToWithdraw;
+                message = $"Water level decreased by {litersToWithdraw} liters.  {WaterLevel} liters remain.";
+            }
+            else
+            {
+                message = $"There is not enough water available to withdraw {litersToWithdraw} liters.  You may withdraw {currentToMin} liters.";
+            }
+
+            return message;
+        }
+
+
+        public bool DrainTank(int litersPerSecond)
+        {
+            int currentToMin = (WaterLevel - minWater);
+
+            bool result = false;
+
+            
+            if (litersPerSecond<=currentToMin)
+            {
+                WaterLevel -= litersPerSecond;
+                result = true;
+
+            }
+            return result;
+
+            
         }
 
         public bool FillTank(int litersPerSecond)
         {
-            if (WaterLevel == TankCapacity)
-                return false;
-            else
-                do
-                {
-                    WaterLevel += litersToAdd;
-                }
-                while (WaterLevel < TankCapacity);
-            return true;
-            
+            int currentToMax = ((int)(TankCapacity - WaterLevel));
 
+            bool result = false;
 
+            if (litersPerSecond <= currentToMax)
+            {
+                WaterLevel += litersPerSecond;
+                result = true;
+            }
+            return result;
         }   
+
      }
     #endregion
 }
