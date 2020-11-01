@@ -57,6 +57,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.lblUpdate = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.grpWaterTank.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRadius)).BeginInit();
@@ -131,21 +132,22 @@
             this.lblDepth.AutoSize = true;
             this.lblDepth.Location = new System.Drawing.Point(7, 50);
             this.lblDepth.Name = "lblDepth";
-            this.lblDepth.Size = new System.Drawing.Size(36, 13);
+            this.lblDepth.Size = new System.Drawing.Size(76, 13);
             this.lblDepth.TabIndex = 1;
-            this.lblDepth.Text = "Depth";
+            this.lblDepth.Text = "Depth (meters)";
             // 
             // lblRadius
             // 
             this.lblRadius.AutoSize = true;
             this.lblRadius.Location = new System.Drawing.Point(7, 20);
             this.lblRadius.Name = "lblRadius";
-            this.lblRadius.Size = new System.Drawing.Size(40, 13);
+            this.lblRadius.Size = new System.Drawing.Size(80, 13);
             this.lblRadius.TabIndex = 0;
-            this.lblRadius.Text = "Radius";
+            this.lblRadius.Text = "Radius (meters)";
             // 
             // grpWaterTankData
             // 
+            this.grpWaterTankData.Controls.Add(this.label2);
             this.grpWaterTankData.Controls.Add(this.tbxMaximumCapacity);
             this.grpWaterTankData.Controls.Add(this.btnMaximumCapacity);
             this.grpWaterTankData.Controls.Add(this.tbxCurrentWaterLevel);
@@ -344,7 +346,6 @@
             this.tbxFillDrain.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbxFillDrain.Size = new System.Drawing.Size(100, 228);
             this.tbxFillDrain.TabIndex = 2;
-            
             // 
             // radDrain
             // 
@@ -395,6 +396,15 @@
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(160, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "liters";
             // 
             // Form1
             // 
@@ -459,6 +469,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblUpdate;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboTeams = new System.Windows.Forms.ComboBox();
+            this.cboSuperBowlWinners = new System.Windows.Forms.ComboBox();
+            this.btnHowManyWins = new System.Windows.Forms.Button();
+            this.btnBack2Back = new System.Windows.Forms.Button();
+            this.lblOutput = new System.Windows.Forms.Label();
+            this.lblBack2Back = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cboTeams
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboTeams.FormattingEnabled = true;
+            this.cboTeams.Items.AddRange(new object[] {
             "Cardinals",
             "Falcons",
             "Ravens",
@@ -68,15 +72,15 @@
             "Buccaneers",
             "Titans",
             "The Washington Football Team"});
-            this.comboBox1.Location = new System.Drawing.Point(29, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cboTeams.Location = new System.Drawing.Point(29, 66);
+            this.cboTeams.Name = "cboTeams";
+            this.cboTeams.Size = new System.Drawing.Size(121, 21);
+            this.cboTeams.TabIndex = 0;
             // 
-            // comboBox2
+            // cboSuperBowlWinners
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboSuperBowlWinners.FormattingEnabled = true;
+            this.cboSuperBowlWinners.Items.AddRange(new object[] {
             "Packers",
             "Packers",
             "Jets",
@@ -131,28 +135,75 @@
             "Eagles",
             "Patriots",
             "Chiefs"});
-            this.comboBox2.Location = new System.Drawing.Point(181, 65);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(176, 21);
-            this.comboBox2.TabIndex = 1;
+            this.cboSuperBowlWinners.Location = new System.Drawing.Point(181, 65);
+            this.cboSuperBowlWinners.Name = "cboSuperBowlWinners";
+            this.cboSuperBowlWinners.Size = new System.Drawing.Size(176, 21);
+            this.cboSuperBowlWinners.TabIndex = 1;
+            // 
+            // btnHowManyWins
+            // 
+            this.btnHowManyWins.Location = new System.Drawing.Point(431, 26);
+            this.btnHowManyWins.Name = "btnHowManyWins";
+            this.btnHowManyWins.Size = new System.Drawing.Size(134, 23);
+            this.btnHowManyWins.TabIndex = 2;
+            this.btnHowManyWins.Text = "How Many SuperBowls?";
+            this.btnHowManyWins.UseVisualStyleBackColor = true;
+            this.btnHowManyWins.Click += new System.EventHandler(this.btnHowManyWins_Click);
+            // 
+            // btnBack2Back
+            // 
+            this.btnBack2Back.Location = new System.Drawing.Point(582, 26);
+            this.btnBack2Back.Name = "btnBack2Back";
+            this.btnBack2Back.Size = new System.Drawing.Size(140, 23);
+            this.btnBack2Back.TabIndex = 3;
+            this.btnBack2Back.Text = "Back-to-Back Winners";
+            this.btnBack2Back.UseVisualStyleBackColor = true;
+            this.btnBack2Back.Click += new System.EventHandler(this.btnBack2Back_Click);
+            // 
+            // lblOutput
+            // 
+            this.lblOutput.AutoSize = true;
+            this.lblOutput.Location = new System.Drawing.Point(431, 66);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(35, 13);
+            this.lblOutput.TabIndex = 4;
+            this.lblOutput.Text = "label1";
+            // 
+            // lblBack2Back
+            // 
+            this.lblBack2Back.AutoSize = true;
+            this.lblBack2Back.Location = new System.Drawing.Point(582, 72);
+            this.lblBack2Back.Name = "lblBack2Back";
+            this.lblBack2Back.Size = new System.Drawing.Size(35, 13);
+            this.lblBack2Back.TabIndex = 5;
+            this.lblBack2Back.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 450);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblBack2Back);
+            this.Controls.Add(this.lblOutput);
+            this.Controls.Add(this.btnBack2Back);
+            this.Controls.Add(this.btnHowManyWins);
+            this.Controls.Add(this.cboSuperBowlWinners);
+            this.Controls.Add(this.cboTeams);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboTeams;
+        private System.Windows.Forms.ComboBox cboSuperBowlWinners;
+        private System.Windows.Forms.Button btnHowManyWins;
+        private System.Windows.Forms.Button btnBack2Back;
+        private System.Windows.Forms.Label lblOutput;
+        private System.Windows.Forms.Label lblBack2Back;
     }
 }
 

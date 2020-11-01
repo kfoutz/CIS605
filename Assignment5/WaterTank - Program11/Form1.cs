@@ -69,14 +69,14 @@ namespace WaterTank___Program11
         {
             //string strMaxCap = Convert.ToString(TankCapacity);
 
-            tbxMaximumCapacity.Text = aWaterTank.TankCapacity.ToString();
+            tbxMaximumCapacity.Text = aWaterTank.TankCapacity.ToString("N0");
 
             //aWaterTank = new WaterTank(Radius, Depth, WaterLevel, TankCapacity);
         }
 
         private void btnCurrentWaterLevel_Click(object sender, EventArgs e)
         {
-            tbxCurrentWaterLevel.Text = aWaterTank.WaterLevel.ToString();
+            tbxCurrentWaterLevel.Text = aWaterTank.WaterLevel.ToString("N0");
         }
 
 
@@ -97,7 +97,7 @@ namespace WaterTank___Program11
             {
                 while (aWaterTank.FillTank(liters))
                 {
-                    output += aWaterTank.WaterLevel.ToString() + " liters\r\n";
+                    output += aWaterTank.WaterLevel.ToString("N0") + " liters\r\n";
                     tbxFillDrain.Text = output;
 
                 }
@@ -108,7 +108,7 @@ namespace WaterTank___Program11
             {
                 while (aWaterTank.DrainTank(liters))
                 {
-                    output += aWaterTank.WaterLevel.ToString() + " liters\r\n";
+                    output += aWaterTank.WaterLevel.ToString("N0") + " liters\r\n";
 
                 }
                 tbxFillDrain.Text = output += "Empty tank";

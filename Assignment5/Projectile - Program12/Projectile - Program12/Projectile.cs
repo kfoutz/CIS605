@@ -12,7 +12,6 @@ namespace Projectile___Program12
 
         #region "Fields"
 
-        private double maxHeight;
         private double feet;
         private double atTime;
         private double maxHeightTime;
@@ -23,22 +22,12 @@ namespace Projectile___Program12
 
         public int InitialHeight { get; private set; }
         public int InitialVelocity { get; private set; }
-        public double MaxHeight
-        {
-            get
-            {
-                return maxHeight;
-            }
-            set
-            {
-                maxHeight = value;                
-            }
-        }
+        public double MaxHeight { get; set; }
         public double AtTime
         {
             get
             {
-                return Math.Round(atTime, 3);
+                return Math.Round(atTime, 2);
             }
             set
             {
@@ -54,11 +43,8 @@ namespace Projectile___Program12
         {
             InitialHeight = initialHeight;
             InitialVelocity = initialVelocity;
-            MaxHeight = maxHeight;
             CalcMaxHeight();
             CalcLandTime();
-            FindHeight(atTime);
-
         }
 
         #endregion
@@ -67,32 +53,33 @@ namespace Projectile___Program12
 
         private double FindHeight(double atTime)
         {
-            feet = InitialHeight + (InitialVelocity * atTime) - (16 * Math.Pow(atTime, 2));
+            feet = (double)InitialHeight + ((double)InitialVelocity * atTime) - (16 * (atTime* atTime));
 
             return feet;
         }
 
         private double CalcMaxHeight()
         {
-            maxHeightTime = InitialVelocity / 32;
+            maxHeightTime = (double)InitialVelocity / 32;
 
-            MaxHeight = FindHeight(maxHeightTime);
+            MaxHeight = (FindHeight(maxHeightTime));
 
+            MaxHeight = Math.Round(MaxHeight, 2);
             return MaxHeight;
         }
 
 
         private double CalcLandTime()
-        {           
+        {
+
             do
             {                
-                feet = FindHeight(atTime);
-                FindHeight(atTime);
+                atTime += .1;
                 
-                atTime += .1;                
+                FindHeight(atTime);
+                               
             }
-            while (feet > 0);
-            
+            while ((double)feet > 0);
             return atTime;
         }
         #endregion

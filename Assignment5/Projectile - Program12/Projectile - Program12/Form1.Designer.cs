@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.nudInitialHeight = new System.Windows.Forms.NumericUpDown();
             this.nudInitialVelocity = new System.Windows.Forms.NumericUpDown();
+            this.nudInitialHeight = new System.Windows.Forms.NumericUpDown();
             this.lblMaxHeight = new System.Windows.Forms.Label();
             this.lblHangTime = new System.Windows.Forms.Label();
             this.btnCalcMaxHeight = new System.Windows.Forms.Button();
@@ -45,8 +45,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialVelocity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,24 +67,24 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Initial Height";
             // 
-            // nudInitialHeight
+            // nudInitialVelocity
             // 
-            this.nudInitialHeight.Location = new System.Drawing.Point(101, 40);
-            this.nudInitialHeight.Maximum = new decimal(new int[] {
+            this.nudInitialVelocity.Location = new System.Drawing.Point(101, 40);
+            this.nudInitialVelocity.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.nudInitialHeight.Name = "nudInitialHeight";
-            this.nudInitialHeight.Size = new System.Drawing.Size(120, 20);
-            this.nudInitialHeight.TabIndex = 2;
-            // 
-            // nudInitialVelocity
-            // 
-            this.nudInitialVelocity.Location = new System.Drawing.Point(101, 90);
             this.nudInitialVelocity.Name = "nudInitialVelocity";
             this.nudInitialVelocity.Size = new System.Drawing.Size(120, 20);
-            this.nudInitialVelocity.TabIndex = 3;
+            this.nudInitialVelocity.TabIndex = 2;
+            // 
+            // nudInitialHeight
+            // 
+            this.nudInitialHeight.Location = new System.Drawing.Point(101, 90);
+            this.nudInitialHeight.Name = "nudInitialHeight";
+            this.nudInitialHeight.Size = new System.Drawing.Size(120, 20);
+            this.nudInitialHeight.TabIndex = 3;
             // 
             // lblMaxHeight
             // 
@@ -224,14 +224,14 @@
             this.Controls.Add(this.btnCalcMaxHeight);
             this.Controls.Add(this.lblHangTime);
             this.Controls.Add(this.lblMaxHeight);
-            this.Controls.Add(this.nudInitialVelocity);
             this.Controls.Add(this.nudInitialHeight);
+            this.Controls.Add(this.nudInitialVelocity);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Projectile Calculation";
-            ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitialVelocity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInitialHeight)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,8 +241,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown nudInitialHeight;
         private System.Windows.Forms.NumericUpDown nudInitialVelocity;
+        private System.Windows.Forms.NumericUpDown nudInitialHeight;
         private System.Windows.Forms.Label lblMaxHeight;
         private System.Windows.Forms.Label lblHangTime;
         private System.Windows.Forms.Button btnCalcMaxHeight;
