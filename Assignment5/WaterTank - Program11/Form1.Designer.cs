@@ -36,6 +36,7 @@
             this.lblDepth = new System.Windows.Forms.Label();
             this.lblRadius = new System.Windows.Forms.Label();
             this.grpWaterTankData = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbxMaximumCapacity = new System.Windows.Forms.TextBox();
             this.btnMaximumCapacity = new System.Windows.Forms.Button();
             this.tbxCurrentWaterLevel = new System.Windows.Forms.TextBox();
@@ -57,7 +58,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.lblUpdate = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.grpWaterTank.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRadius)).BeginInit();
@@ -158,6 +159,15 @@
             this.grpWaterTankData.TabIndex = 1;
             this.grpWaterTankData.TabStop = false;
             this.grpWaterTankData.Text = "Water Tank Data";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(160, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "liters";
             // 
             // tbxMaximumCapacity
             // 
@@ -272,6 +282,7 @@
             // 
             // grpFillDrainWater
             // 
+            this.grpFillDrainWater.Controls.Add(this.label3);
             this.grpFillDrainWater.Controls.Add(this.pictureBox1);
             this.grpFillDrainWater.Controls.Add(this.btnFillDrain);
             this.grpFillDrainWater.Controls.Add(this.nudFillDrain);
@@ -397,14 +408,15 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // label2
+            // label3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "liters";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Mistral", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(305, 275);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Kerry Foutz";
             // 
             // Form1
             // 
@@ -419,6 +431,7 @@
             this.Controls.Add(this.grpWaterTankData);
             this.Controls.Add(this.grpWaterTank);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Water Tank Control";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpWaterTank.ResumeLayout(false);
@@ -470,6 +483,7 @@
         private System.Windows.Forms.Label lblUpdate;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

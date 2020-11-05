@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 5 Program 12
+ * Date:            November 2020
+ * Developed By:    KCF
+ * Class Name:      Projectile
+ * Purpose:         Caculations, bools and loops
+*/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -9,6 +18,12 @@ namespace Projectile___Program12
 {
     class Projectile
     {
+
+        #region "Constants"
+        const int fakeGravity = 32;
+        const double interval = .1;
+
+        #endregion
 
         #region "Fields"
 
@@ -60,7 +75,7 @@ namespace Projectile___Program12
 
         private double CalcMaxHeight()
         {
-            maxHeightTime = (double)InitialVelocity / 32;
+            maxHeightTime = (double)InitialVelocity / fakeGravity;
 
             MaxHeight = (FindHeight(maxHeightTime));
 
@@ -74,7 +89,7 @@ namespace Projectile___Program12
 
             do
             {                
-                atTime += .1;
+                atTime += interval;
                 
                 FindHeight(atTime);
                                

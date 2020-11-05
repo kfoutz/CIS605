@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 5 Program 13
+ * Date:            November 2020
+ * Developed By:    KCF
+ * Class Name:      n/a
+ * Purpose:         Functional Forms
+*/
+
+
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,25 +30,48 @@ namespace SuperBowls___Program13
 
         private void btnHowManyWins_Click(object sender, EventArgs e)
         {
-            string teamToFind = cboTeams.SelectedItem.ToString();
 
-            int counter = 0;
-
-            for (int x = 0; x < cboSuperBowlWinners.Items.Count; ++x)
+            if (cboTeams.SelectedItem == null)
             {
-                if (teamToFind == cboSuperBowlWinners.Items[x].ToString())
-                {
-                    ++counter;
-                }
+                MessageBox.Show("You must a pick a team.", "Missing Team", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                cboTeams.Focus();
+                return;
             }
 
-            lblOutput.Text = $"{teamToFind} won {counter} times.";
+            else
+            {
+                string teamToFind = cboTeams.SelectedItem.ToString();
+
+                int counter = 0;
+
+                for (int x = 0; x < cboSuperBowlWinners.Items.Count; ++x)
+                {
+                    if (teamToFind == cboSuperBowlWinners.Items[x].ToString())
+                    {
+                        ++counter;
+                    }
+
+                }
+
+                if (counter == 0)
+                {
+                    lblOutput.Text = $"The {teamToFind} have never\n won the SuperBowl.";
+                }
+                else if (counter == 1)
+                {
+                    lblOutput.Text = $"The {teamToFind} have won\n the SuperBowl once.";
+                }
+                else
+                {
+                    lblOutput.Text = $"The {teamToFind} have won\n the SuperBowl {counter} times.";
+                }
+            }
+            
         }
 
         private void btnBack2Back_Click(object sender, EventArgs e)
         {
-            string teamToFind = cboSuperBowlWinners.SelectedItem.ToString();
-            
+                        
             int counter = 0;
 
             for (int x = 0; x < cboSuperBowlWinners.Items.Count-1; ++x)
@@ -48,7 +82,14 @@ namespace SuperBowls___Program13
                 }
             }
 
-            lblBack2Back.Text = $"Teams have won back to back {counter} times.";
+            lblBack2Back.Text = $"Teams have won the \nSuperbowl back to back {counter} times.";
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
     }
 }

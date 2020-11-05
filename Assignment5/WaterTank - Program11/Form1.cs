@@ -30,7 +30,7 @@ namespace WaterTank___Program11
 
 
 
-            // assign inoputs to local vars
+            // assign inputs to local vars
 
             radius = ((int)nudRadius.Value);
             depth = ((int)nudDepth.Value);
@@ -163,7 +163,5 @@ namespace WaterTank___Program11
         {
             this.Close();
         }
-
-       
     }
 }

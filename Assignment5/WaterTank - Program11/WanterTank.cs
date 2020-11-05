@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Project:         Assignment 5 Program 11
+ * Date:            November 2020
+ * Developed By:    KCF
+ * Class Name:      WaterTank
+ * Purpose:         Caculations, bools and loops
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Drawing.Printing;
 using System.Linq;
@@ -14,14 +22,16 @@ namespace WaterTank___Program11
 
         #region "Constants"
 
-        //const double addwater = 50; 
+        
         const int minWater = 0;
         const int maxRadiusDepth = 6700;
+        const int literConversion = 1000;
         #endregion
 
         #region "Parameters"
-        //public int LitersToAdd;
-        
+
+        #endregion
+
 
 
 
@@ -40,12 +50,8 @@ namespace WaterTank___Program11
         {
             Radius = radius;
             Depth = depth;
-            //WaterLevel = waterLevel;
-            //TankCapacity = tankCapacity;
-            //LitersToAdd = litersToAdd;
+            
             CalcTankCapacity();
-            //AddWater(litersToAdd);
-            //WithdrawWater(litersToAdd);
         }
 
         #endregion
@@ -56,7 +62,7 @@ namespace WaterTank___Program11
         private int CalcTankCapacity()
         
             { 
-                TankCapacity = Convert.ToInt32(Math.Floor(Math.PI * Math.Pow(Radius, 2) * Depth * 1000));
+                TankCapacity = Convert.ToInt32(Math.Floor(Math.PI * Math.Pow(Radius, 2) * Depth * literConversion));
                 return Convert.ToInt32(TankCapacity);
             }
 
@@ -69,11 +75,12 @@ namespace WaterTank___Program11
                 string message = string.Empty;
 
 
-                if (WaterLevel + litersToAdd < TankCapacity)
+                if (WaterLevel + litersToAdd <= TankCapacity)
 
                 {
                     WaterLevel += litersToAdd;
-                    message = $"Water level increased by {litersToAdd}. \n Current water level is {WaterLevel} liters.\n Water may be increased by {currentToMax} liters.";
+                int currentToMax2 = (int)(TankCapacity - WaterLevel);
+                message = $"Water level increased by {litersToAdd} liters. \n Current water level is {WaterLevel} liters.\n Water may be increased by {currentToMax2} liters.";
                 }
                 else
                 {
@@ -91,7 +98,7 @@ namespace WaterTank___Program11
 
             string message = string.Empty;
 
-            if (WaterLevel - litersToWithdraw > minWater)
+            if (WaterLevel - litersToWithdraw >= minWater)
             {
                 WaterLevel -= litersToWithdraw;
                 message = $"Water level decreased by {litersToWithdraw} liters.  {WaterLevel} liters remain.";
@@ -140,4 +147,3 @@ namespace WaterTank___Program11
      }
     #endregion
 }
-#endregion
