@@ -8,3 +8,13 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\Projectil
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.pdb
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile___Program12.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\bin\Debug\Projectile - Program12.exe.config
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\bin\Debug\Projectile - Program12.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\bin\Debug\Projectile - Program12.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile___Program12.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile___Program12.Properties.Resources.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.csproj.GenerateResource.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.csproj.CoreCompileInputs.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\Projectile - Program12\Projectile - Program12\obj\Debug\Projectile - Program12.pdb
