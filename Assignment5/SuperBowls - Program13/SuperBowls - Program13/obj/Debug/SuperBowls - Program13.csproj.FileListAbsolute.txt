@@ -8,3 +8,13 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowl
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csproj.CoreCompileInputs.cache
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\bin\Debug\SuperBowls - Program13.exe.config
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\bin\Debug\SuperBowls - Program13.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\bin\Debug\SuperBowls - Program13.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls___Program13.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls___Program13.Properties.Resources.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csproj.GenerateResource.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.csproj.CoreCompileInputs.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\SuperBowls - Program13\SuperBowls - Program13\obj\Debug\SuperBowls - Program13.pdb

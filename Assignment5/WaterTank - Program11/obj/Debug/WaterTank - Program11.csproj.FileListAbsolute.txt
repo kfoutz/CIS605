@@ -8,3 +8,6 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\WaterTank
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\WaterTank - Program11\obj\Debug\WaterTank - Program11.csproj.CoreCompileInputs.cache
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\WaterTank - Program11\obj\Debug\WaterTank - Program11.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\git\CIS605\Assignment5\WaterTank - Program11\obj\Debug\WaterTank - Program11.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\WaterTank - Program11\obj\Debug\WaterTank - Program11.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\WaterTank - Program11\obj\Debug\WaterTank - Program11.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment5\WaterTank - Program11\obj\Debug\WaterTank - Program11.pdb
