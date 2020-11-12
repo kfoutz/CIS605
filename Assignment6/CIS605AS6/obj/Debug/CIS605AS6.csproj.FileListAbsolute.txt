@@ -1,0 +1,20 @@
+U:\CIS605\Solutions\FAll2020\CIS605AS6\bin\Debug\CIS605AS6.exe.config
+U:\CIS605\Solutions\FAll2020\CIS605AS6\bin\Debug\CIS605AS6.exe
+U:\CIS605\Solutions\FAll2020\CIS605AS6\bin\Debug\CIS605AS6.pdb
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.csprojAssemblyReference.cache
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.Program14.resources
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.Program15.resources
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.Properties.Resources.resources
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.csproj.GenerateResource.cache
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.exe
+U:\CIS605\Solutions\FAll2020\CIS605AS6\obj\Debug\CIS605AS6.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.csprojAssemblyReference.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.Program14.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.Properties.Resources.resources
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.csproj.GenerateResource.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.csproj.CoreCompileInputs.cache
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\bin\Debug\CIS605AS6.exe.config
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\bin\Debug\CIS605AS6.exe
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\bin\Debug\CIS605AS6.pdb
