@@ -45,6 +45,8 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.grpStats = new System.Windows.Forms.GroupBox();
+            this.lblConsistentScoreHoles = new System.Windows.Forms.Label();
+            this.btnConsistentHoles = new System.Windows.Forms.Button();
             this.lblPerformance = new System.Windows.Forms.Label();
             this.btnPerformance = new System.Windows.Forms.Button();
             this.lblAverageScore = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lstAfterHoleStatus = new System.Windows.Forms.ListBox();
             this.btnStatusAfterHole = new System.Windows.Forms.Button();
-            this.btnConsistentHoles = new System.Windows.Forms.Button();
-            this.lblConsistentScoreHoles = new System.Windows.Forms.Label();
             this.grpScoreInfo.SuspendLayout();
             this.grpTriggers.SuspendLayout();
             this.grpStats.SuspendLayout();
@@ -252,6 +252,27 @@
             this.grpStats.TabStop = false;
             this.grpStats.Text = "Display Stats:";
             // 
+            // lblConsistentScoreHoles
+            // 
+            this.lblConsistentScoreHoles.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblConsistentScoreHoles.Location = new System.Drawing.Point(391, 119);
+            this.lblConsistentScoreHoles.Name = "lblConsistentScoreHoles";
+            this.lblConsistentScoreHoles.Size = new System.Drawing.Size(93, 34);
+            this.lblConsistentScoreHoles.TabIndex = 32;
+            this.lblConsistentScoreHoles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnConsistentHoles
+            // 
+            this.btnConsistentHoles.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnConsistentHoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsistentHoles.Location = new System.Drawing.Point(305, 25);
+            this.btnConsistentHoles.Name = "btnConsistentHoles";
+            this.btnConsistentHoles.Size = new System.Drawing.Size(179, 72);
+            this.btnConsistentHoles.TabIndex = 31;
+            this.btnConsistentHoles.Text = "Number of Holes with Same Score";
+            this.btnConsistentHoles.UseVisualStyleBackColor = true;
+            this.btnConsistentHoles.Click += new System.EventHandler(this.btnConsistentHoles_Click);
+            // 
             // lblPerformance
             // 
             this.lblPerformance.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -382,27 +403,6 @@
             this.btnStatusAfterHole.UseVisualStyleBackColor = true;
             this.btnStatusAfterHole.Click += new System.EventHandler(this.btnStatusAfterHole_Click);
             // 
-            // btnConsistentHoles
-            // 
-            this.btnConsistentHoles.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnConsistentHoles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsistentHoles.Location = new System.Drawing.Point(305, 25);
-            this.btnConsistentHoles.Name = "btnConsistentHoles";
-            this.btnConsistentHoles.Size = new System.Drawing.Size(179, 72);
-            this.btnConsistentHoles.TabIndex = 31;
-            this.btnConsistentHoles.Text = "Number of Holes with Same Score";
-            this.btnConsistentHoles.UseVisualStyleBackColor = true;
-            this.btnConsistentHoles.Click += new System.EventHandler(this.btnConsistentHoles_Click);
-            // 
-            // lblConsistentScoreHoles
-            // 
-            this.lblConsistentScoreHoles.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblConsistentScoreHoles.Location = new System.Drawing.Point(391, 119);
-            this.lblConsistentScoreHoles.Name = "lblConsistentScoreHoles";
-            this.lblConsistentScoreHoles.Size = new System.Drawing.Size(93, 34);
-            this.lblConsistentScoreHoles.TabIndex = 32;
-            this.lblConsistentScoreHoles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // Program15
             // 
             this.AcceptButton = this.btnCreate;
@@ -419,6 +419,7 @@
             this.Name = "Program15";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assignment Set 6 - Program 15";
+            this.Load += new System.EventHandler(this.Program15_Load);
             this.grpScoreInfo.ResumeLayout(false);
             this.grpScoreInfo.PerformLayout();
             this.grpTriggers.ResumeLayout(false);

@@ -1,7 +1,7 @@
 ﻿/*
  * Project:         Assignment Set 6 - Program 15
- * Date:            October 2020
- * Developed By:    LV
+ * Date:            November 2020
+ * Developed By:    LV and KCF
  * Class Name:      ScoreCard
  * Assumption:      The scorecard is for a specific tournament and year
 */
@@ -57,17 +57,19 @@ namespace CIS605AS6
         public int[] CalcStatusAfterHole(int round)
         {
 
+            int numHoles = ScoresByRound.GetLength(1);
 
-            for (int x = 1; x < ScoresByRound.Length -1; ++x)
+            int[] statusByHole = new int[numHoles];
+
+            statusByHole[0] = ScoresByRound[round - 1, 0] - CoursePars[0];
+
+            for (int col = 1; col < numHoles; ++col)
             {
-                int status = (ScoresByRound.[x] - CoursePars[x]);
-                    if (x > 1)
-                {
-                    status = status + (ScoresByRound.[x] - CoursePars.[x]);
-                }
+                statusByHole[col] = statusByHole[col - 1] + (ScoresByRound[round - 1, col] - CoursePars[col]);
             }
-        }
 
+            return statusByHole;
+        }
         /* Complete this method to calculate and return the player's average score for holes of a specific par (i.e., 3, 4 or 5).
          * 
          * Player's average score for holes of a specific par = 
@@ -82,6 +84,27 @@ namespace CIS605AS6
 
         public double CalcAverageScoreByPar(int par)
         {
+                int numRounds = ScoresByRound.GetLength(0);
+                int numHoles = ScoresByRound.GetLength(1);
+
+                int numParHoles = 0;
+
+                double totalParScore = 0;
+
+                for (int col = 0; col < numHoles; ++col)
+                {
+                    if (CoursePars[col] ==par)
+                    {
+                        ++numParHoles;
+
+                        for (int row = 0; row < numRounds; ++row)
+                        {
+                            totalParScore += ScoresByRound[row, col];
+                        }
+                    }
+                }
+
+            return totalParScore / (numParHoles * numRounds);
 
         }
 
@@ -92,7 +115,27 @@ namespace CIS605AS6
 
         public int FindNumberOfHolesWithConsistentScore()
         {
+            int countConsistentHoles = 0;
+            int numRounds = ScoresByRound.GetLength(0);
+            int numHoles = ScoresByRound.GetLength(1);
 
+            for (int col = 0; col < numHoles; ++col)
+            {
+                bool status = true;
+                for (int row = 0; row < numRounds -1;  ++row)
+                {
+                    if (ScoresByRound[row, col] != ScoresByRound[row+ 1, col])
+                    {
+                        status = false;
+                        break;
+                    }
+                }
+                if (status == true)
+                {
+                    ++countConsistentHoles;
+                }
+            }
+            return countConsistentHoles;
         }
 
         /* Complete this method to calculate and return the player's overall performance by score type (i.e., Number of Eagles, Birdies, Pars, Bogeys and Double Bogeys)
@@ -110,7 +153,43 @@ namespace CIS605AS6
 
         public string CalcPerformanceByScoreType()
         {
+            int numRounds = ScoresByRound.GetLength(0);
+            int numHoles = ScoresByRound.GetLength(1);
+            int eagleCounter = 0;
+            int birdieCounter = 0;
+            int parCounter = 0;
+            int bogeyCounter = 0;
+            int doubleBogeyCounter = 0;
 
+            string message = string.Empty;
+
+
+            for (int row =0; row < numRounds; ++ row)
+            {
+                for (int col = 0; col < numHoles -1; ++col)
+                {
+                    switch (ScoresByRound[row,col] - CoursePars[col])
+                    {
+                        case -2:
+                            eagleCounter++;
+                            break;
+                        case -1:
+                            birdieCounter++;
+                            break;
+                        case 0:
+                            parCounter++;
+                            break;
+                        case 1:
+                            bogeyCounter++;
+                            break;
+                        case 2:
+                            doubleBogeyCounter++;
+                            break;
+
+                    }
+                } message = $"{PlayerName} scored {eagleCounter} Eagles, {birdieCounter} Birdies, {parCounter} Pars, {bogeyCounter} Bogeys and {doubleBogeyCounter} Double Bogeys.";
+            }
+            return message;
         }
 
         #endregion

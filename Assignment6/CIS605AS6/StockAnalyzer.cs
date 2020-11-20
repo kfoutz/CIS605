@@ -89,7 +89,6 @@ namespace CIS605AS6
                 }
             }
 
-            //output = $"{currentMaxChange.ToString()}";
 
             return currentMaxChange;
         }
@@ -101,7 +100,6 @@ namespace CIS605AS6
 
         public int FindNumTimesNegativePriceChange()
         {
-            //decimal priceChange = StockPrices[1] - StockPrices[0];
             int counter = 1;    
 
             for (int x=1; x<StockPrices.Length -1; ++x)
@@ -125,8 +123,6 @@ namespace CIS605AS6
         {
             int streakCounter = 0;
             int counter = 0;
-
-            
 
             for (int x=1; x < StockPrices.Length-1; ++x)
             {

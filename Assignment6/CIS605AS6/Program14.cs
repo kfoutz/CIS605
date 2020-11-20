@@ -1,7 +1,7 @@
 ﻿/*
  * Project:         Assignment Set 6 - Program 14
  * Date:            October 2020
- * Developed By:    LV
+ * Developed By:    LV and KCF
  * Class Name:      Program14 - Presentation Layer
  * Purpose:         Create and use StockAnalyzer Class
  * Uses:            StockAnalyzer class
@@ -57,7 +57,6 @@ namespace CIS605AS6
 
         #region "To Do"
 
-        // complete this method
 
         // call the FindSmallestPercentageGainInPrice method 
         // display the returned result in lblSmallest
@@ -67,7 +66,6 @@ namespace CIS605AS6
             lblSmallest.Text = aAnalyzer.FindSmallestPercentageGainInPrice().ToString();
         }
 
-        // complete this method
 
         // call the FindLargestPriceChange method 
         // format and display the returned result in lblLargest
@@ -77,7 +75,6 @@ namespace CIS605AS6
             lblLargest.Text = aAnalyzer.FindLargestPriceChange().ToString("c2");
         }
 
-        // complete this method
 
         // call the FindNumTimesNegativePriceChange method 
         // display the returned result in lblNegative
@@ -87,7 +84,6 @@ namespace CIS605AS6
             lblNegative.Text = aAnalyzer.FindNumTimesNegativePriceChange().ToString();
         }
 
-        // complete this method
 
         // call the FindLongestPriceGainStreak method 
         // display the returned result in lblLongest

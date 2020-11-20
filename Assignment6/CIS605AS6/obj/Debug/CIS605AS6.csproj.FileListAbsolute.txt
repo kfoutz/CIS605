@@ -18,3 +18,4 @@ C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605A
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\bin\Debug\CIS605AS6.exe.config
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\bin\Debug\CIS605AS6.exe
 C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\bin\Debug\CIS605AS6.pdb
+C:\Users\kfoutz\Documents\KCF-Stuff\CSU\CIS-605\Assignments\Assignment 6\CIS605AS6\CIS605AS6\obj\Debug\CIS605AS6.Program15.resources

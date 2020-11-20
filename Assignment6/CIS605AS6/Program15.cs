@@ -1,7 +1,7 @@
 ﻿/*
  * Project:         Assignment Set 6 - Program 15
- * Date:            October 2020
- * Developed By:    LV
+ * Date:            November 2020
+ * Developed By:    LV and KCF
  * Class Name:      Program15 - Presentation Layer
  * Purpose:         Create and use Scorecard Class
  * Uses:            ScoreCard class
@@ -91,43 +91,39 @@ namespace CIS605AS6
 
         #region "To Do"
 
-        // complete this method
-
+        
         // call the CalcStatusAfterHole method 
         // display the returned result in lstAfterHoleStatus
 
         private void btnStatusAfterHole_Click(object sender, EventArgs e)
         {
-
+            lstAfterHoleStatus.DataSource = aCard.CalcStatusAfterHole(Convert.ToInt32(nudRound.Value));
         }
 
-        // complete this method
 
         // call the CalcAverageScoreByPar method 
         // display the returned result in lblAverageScore
 
         private void btnAverageScore_Click(object sender, EventArgs e)
         {
-
+            lblAverageScore.Text = aCard.CalcAverageScoreByPar(Convert.ToInt32(nudPar.Value)).ToString("n3");
         }
 
-        // complete this method
 
         // call the FindNumberOfHolesWithConsistentScore method 
         // display the returned result in lblConsistentScoreHoles
         private void btnConsistentHoles_Click(object sender, EventArgs e)
         {
-
+            lblConsistentScoreHoles.Text = aCard.FindNumberOfHolesWithConsistentScore().ToString();
         }
 
-        // complete this method
 
         // call the CalcPerformanceByScoreType method 
         // display the returned result in lblPerformance
 
         private void btnPerformance_Click(object sender, EventArgs e)
         {
-
+            lblPerformance.Text = aCard.CalcPerformanceByScoreType();
         }
         #endregion
 
@@ -182,5 +178,10 @@ namespace CIS605AS6
             }
         }
         #endregion
+
+        private void Program15_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
