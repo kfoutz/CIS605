@@ -6,21 +6,5 @@
     cause the file to be unrecognizable by the program.
 -->
 <GenericObjectDataSource DisplayName="CharterManager" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-   <Children>
-      <GenericObjectDataSource DisplayName="Charters" Version="1.0">
-         <TypeInfo>Program16.Charter, Program16, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
-         <TypeUISetting>
-            <PropertyUISettings>
-               <PropertyUISetting Name="CharterFee">
-                  <ControlSettings>
-                     <ControlSetting ArtifactName="Microsoft:System.Windows.Forms:Form">
-                        <BindableControlInfo Name="[None]" Type="Microsoft.VSDesigner.Data.BindManager.NoneControlPlaceHolder" />
-                     </ControlSetting>
-                  </ControlSettings>
-               </PropertyUISetting>
-            </PropertyUISettings>
-         </TypeUISetting>
-      </GenericObjectDataSource>
-   </Children>
    <TypeInfo>Program16.CharterManager, Program16, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

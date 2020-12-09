@@ -89,6 +89,7 @@ namespace Program16
             this.noChartersForAYachtSizeToolStripMenuItem.Name = "noChartersForAYachtSizeToolStripMenuItem";
             this.noChartersForAYachtSizeToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.noChartersForAYachtSizeToolStripMenuItem.Text = "No. Charters for a Yacht Size";
+            this.noChartersForAYachtSizeToolStripMenuItem.Click += new System.EventHandler(this.noChartersForAYachtSizeToolStripMenuItem_Click);
             // 
             // chartersSummaryToolStripMenuItem
             // 

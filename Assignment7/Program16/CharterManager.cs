@@ -30,8 +30,9 @@ namespace Program16
         {
             Charters.Add(aCharter);
         }
+        
 
-        public void AddCharter(string customerName, string yachtType, int yachtSize, decimal charterHours, decimal yachtFee)
+        public void AddCharter(string customerName, string yachtType, int yachtSize, decimal charterHours)
         {
             Charter aCharter = new Charter(customerName, yachtType, yachtSize, (int)charterHours);
 

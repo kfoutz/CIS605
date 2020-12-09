@@ -58,9 +58,9 @@ namespace Program16
             this.hoursCharteredDataGridViewTextBoxColumn,
             this.charterFeeDataGridViewTextBoxColumn});
             this.charterManagerDataGridView.DataSource = this.charterManagerBindingSource;
-            this.charterManagerDataGridView.Location = new System.Drawing.Point(52, 103);
+            this.charterManagerDataGridView.Location = new System.Drawing.Point(73, 118);
             this.charterManagerDataGridView.Name = "charterManagerDataGridView";
-            this.charterManagerDataGridView.Size = new System.Drawing.Size(553, 220);
+            this.charterManagerDataGridView.Size = new System.Drawing.Size(581, 220);
             this.charterManagerDataGridView.TabIndex = 1;
             // 
             // custNameDataGridViewTextBoxColumn

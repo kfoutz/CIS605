@@ -30,7 +30,7 @@ namespace Program16
             string customerName;
             int yachtSize;
             string yachtType;
-            decimal charterhours;
+            decimal charterhours, charterFee;
 
             Charter aCharter;
 
@@ -44,17 +44,34 @@ namespace Program16
 
             aCharter = new Charter(customerName, yachtType, yachtSize, charterhours);
 
+            charterFee = aCharter.CharterFee;
+
+            aCharter = new Charter(customerName, yachtType, yachtSize, charterhours);
+
             if (aCharterManager is null)
             {
                 aCharterManager = new CharterManager();
             }
             
             aCharterManager.AddCharter(aCharter);
+
+            //charterManagerBindingSource.DataSource = aCharterManager;
         }
 
         private void allChartersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AllCharters().Show();
+        }
+
+        private void noChartersForAYachtSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string count;
+            
+            yachtgroup aYachtgroup = (yachtgroup)cbxYachtSize.SelectedValue;
+
+            count = aCharterManager.GetCharterCount(aYachtgroup).ToString();
+
+            //MessageBox
         }
     }
 }
