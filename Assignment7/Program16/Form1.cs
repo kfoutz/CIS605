@@ -44,7 +44,7 @@ namespace Program16
 
             aCharter = new Charter(customerName, yachtType, yachtSize, charterhours);
 
-            charterFee = aCharter.CharterFee;
+            
 
             aCharter = new Charter(customerName, yachtType, yachtSize, charterhours);
 
