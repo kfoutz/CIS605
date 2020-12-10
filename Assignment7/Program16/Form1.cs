@@ -30,23 +30,26 @@ namespace Program16
             string customerName;
             int yachtSize;
             string yachtType;
-            decimal charterhours, charterFee;
+            decimal charterhours;
+            decimal yachtFee;
 
             Charter aCharter;
 
             customerName = tbxName.Text;
 
-            yachtSize = Convert.ToInt32(cbxYachtSize.SelectedValue);
+            yachtSize = Convert.ToInt32(cbxYachtSize.SelectedItem);
 
-            yachtType = Convert.ToString(cbxYachtType.SelectedValue);
+            yachtType = Convert.ToString(cbxYachtType.SelectedItem);
 
             charterhours = Convert.ToInt32(nudHoursChartered.Value);
 
             aCharter = new Charter(customerName, yachtType, yachtSize, charterhours);
 
-            
+            yachtFee = aCharter.CharterFee;
 
             aCharter = new Charter(customerName, yachtType, yachtSize, charterhours);
+
+            
 
             if (aCharterManager is null)
             {
@@ -55,23 +58,26 @@ namespace Program16
             
             aCharterManager.AddCharter(aCharter);
 
-            //charterManagerBindingSource.DataSource = aCharterManager;
+            
         }
 
         private void allChartersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new AllCharters().Show();
+            AllCharters aCharters = new AllCharters();
+            aCharters.charterManagerBindingSource.DataSource = aCharterManager;
+            aCharters.ShowDialog();
+            //new AllCharters().Show();
         }
 
-        private void noChartersForAYachtSizeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string count;
+        //private void noChartersForAYachtSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    string count;
             
-            yachtgroup aYachtgroup = (yachtgroup)cbxYachtSize.SelectedValue;
+        //    yachtgroup aYachtgroup = (yachtgroup)cbxYachtSize.SelectedValue;
 
-            count = aCharterManager.GetCharterCount(aYachtgroup).ToString();
+        //    count = aCharterManager.GetCharterCount(aYachtgroup).ToString();
 
-            //MessageBox
-        }
+        //    //MessageBox
+        //}
     }
 }

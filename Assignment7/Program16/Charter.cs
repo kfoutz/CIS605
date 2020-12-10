@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Program16
 {
-    #region "Enumeration"
+    //#region "Enumeration"
 
-    public enum yachtgroup
-    {
-        yacht22 = 1,
-        yacht24 = 2,
-        yacht30 = 3,
-        yacht32 = 4,
-        yacht36 = 5,
-        yacht38 = 6,
-        yacht45 = 7
-    }
+    //public enum yachtgroup
+    //{
+    //    yacht22 = 1,
+    //    yacht24 = 2,
+    //    yacht30 = 3,
+    //    yacht32 = 4,
+    //    yacht36 = 5,
+    //    yacht38 = 6,
+    //    yacht45 = 7
+    //}
     class Charter
     {
 
@@ -35,11 +35,11 @@ namespace Program16
 
         #region "Properties"
 
-        public string CustName { get; private set; }
+        public string CustName { get; set; }
         public string YachtType { get; set; }
         public int YachtSize { get; set; }
-        public decimal HoursChartered { get; private set; }
-        public decimal CharterFee { get; private set; }
+        public decimal HoursChartered { get; set; }
+        public decimal CharterFee { get; set; }
 
         #endregion "Properties"
 
@@ -51,6 +51,7 @@ namespace Program16
             YachtType = yachtType;
             YachtSize = yachtSize;
             HoursChartered = hoursChartered;
+            
 
             CalcCharterFee();
         }
@@ -59,11 +60,12 @@ namespace Program16
 
         #region "Methods"
 
-        public decimal CalcCharterFee()
+        public void CalcCharterFee()
         {
             
             decimal yachtFee = 0;
-                     
+
+            CharterFee = yachtFee;
 
             switch (YachtSize)
             {
@@ -89,10 +91,10 @@ namespace Program16
                     yachtFee = yacht45 * HoursChartered;
                     break;
 
-
+                    
             }
 
-            return yachtFee;
+            
 
             
         }
@@ -101,4 +103,3 @@ namespace Program16
     }
 
 }
-#endregion

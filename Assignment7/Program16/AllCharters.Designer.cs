@@ -30,22 +30,16 @@ namespace Program16
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.charterManagerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.charterManagerDataGridView = new System.Windows.Forms.DataGridView();
             this.custNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yachtTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yachtSizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoursCharteredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.charterFeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).BeginInit();
+            this.charterManagerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.charterManagerDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // charterManagerBindingSource
-            // 
-            this.charterManagerBindingSource.AllowNew = true;
-            this.charterManagerBindingSource.DataMember = "Charters";
-            this.charterManagerBindingSource.DataSource = typeof(Program16.CharterManager);
             // 
             // charterManagerDataGridView
             // 
@@ -96,6 +90,12 @@ namespace Program16
             this.charterFeeDataGridViewTextBoxColumn.Name = "charterFeeDataGridViewTextBoxColumn";
             this.charterFeeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // charterManagerBindingSource
+            // 
+            this.charterManagerBindingSource.AllowNew = false;
+            this.charterManagerBindingSource.DataMember = "Charters";
+            this.charterManagerBindingSource.DataSource = typeof(Program16.CharterManager);
+            // 
             // AllCharters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -104,20 +104,19 @@ namespace Program16
             this.Controls.Add(this.charterManagerDataGridView);
             this.Name = "AllCharters";
             this.Text = "AllCharters";
-            ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.charterManagerDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource charterManagerBindingSource;
         private System.Windows.Forms.DataGridView charterManagerDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn custNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yachtTypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yachtSizeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoursCharteredDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn charterFeeDataGridViewTextBoxColumn;
+        internal System.Windows.Forms.BindingSource charterManagerBindingSource;
     }
 }

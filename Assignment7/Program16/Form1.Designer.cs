@@ -29,13 +29,19 @@ namespace Program16
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allChartersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noChartersForAYachtSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chartersSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetForNextCharterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.addYachtTypeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeYachtTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblName = new System.Windows.Forms.Label();
             this.tbxName = new System.Windows.Forms.TextBox();
             this.lblhrsChartered = new System.Windows.Forms.Label();
@@ -45,13 +51,10 @@ namespace Program16
             this.lblYachtSize = new System.Windows.Forms.Label();
             this.cbxYachtSize = new System.Windows.Forms.ComboBox();
             this.btnAddCharter = new System.Windows.Forms.Button();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.addYachtTypeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.removeYachtTypeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.charterManagerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHoursChartered)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -80,22 +83,32 @@ namespace Program16
             // allChartersToolStripMenuItem
             // 
             this.allChartersToolStripMenuItem.Name = "allChartersToolStripMenuItem";
-            this.allChartersToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.allChartersToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.allChartersToolStripMenuItem.Text = "All Charters";
             this.allChartersToolStripMenuItem.Click += new System.EventHandler(this.allChartersToolStripMenuItem_Click);
             // 
             // noChartersForAYachtSizeToolStripMenuItem
             // 
             this.noChartersForAYachtSizeToolStripMenuItem.Name = "noChartersForAYachtSizeToolStripMenuItem";
-            this.noChartersForAYachtSizeToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
-            this.noChartersForAYachtSizeToolStripMenuItem.Text = "No. Charters for a Yacht Size";
-            this.noChartersForAYachtSizeToolStripMenuItem.Click += new System.EventHandler(this.noChartersForAYachtSizeToolStripMenuItem_Click);
+            this.noChartersForAYachtSizeToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             // 
             // chartersSummaryToolStripMenuItem
             // 
             this.chartersSummaryToolStripMenuItem.Name = "chartersSummaryToolStripMenuItem";
-            this.chartersSummaryToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.chartersSummaryToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.chartersSummaryToolStripMenuItem.Text = "Charters Summary";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(169, 6);
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -113,6 +126,23 @@ namespace Program16
             this.resetForNextCharterToolStripMenuItem.Name = "resetForNextCharterToolStripMenuItem";
             this.resetForNextCharterToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.resetForNextCharterToolStripMenuItem.Text = "Reset for Next Charter";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(187, 6);
+            // 
+            // addYachtTypeToolStripMenuItem1
+            // 
+            this.addYachtTypeToolStripMenuItem1.Name = "addYachtTypeToolStripMenuItem1";
+            this.addYachtTypeToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
+            this.addYachtTypeToolStripMenuItem1.Text = "Add Yacht Type";
+            // 
+            // removeYachtTypeToolStripMenuItem
+            // 
+            this.removeYachtTypeToolStripMenuItem.Name = "removeYachtTypeToolStripMenuItem";
+            this.removeYachtTypeToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.removeYachtTypeToolStripMenuItem.Text = "Remove Yacht Type";
             // 
             // lblName
             // 
@@ -162,14 +192,7 @@ namespace Program16
             // 
             this.cbxYachtType.FormattingEnabled = true;
             this.cbxYachtType.Items.AddRange(new object[] {
-            "Express Cruiser",
-            "Flybridge",
-            "Sedan Bridge",
-            "Motor Yacht",
-            "Tri-Deck",
-            "Sportfish",
-            "Skylounge",
-            "Mega Yacht"});
+            "Express Cruiser"});
             this.cbxYachtType.Location = new System.Drawing.Point(212, 145);
             this.cbxYachtType.Name = "cbxYachtType";
             this.cbxYachtType.Size = new System.Drawing.Size(121, 21);
@@ -211,34 +234,9 @@ namespace Program16
             this.btnAddCharter.UseVisualStyleBackColor = true;
             this.btnAddCharter.Click += new System.EventHandler(this.btnAddCharter_Click);
             // 
-            // toolStripSeparator1
+            // charterManagerBindingSource
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(219, 6);
-            // 
-            // exitToolStripMenuItem1
-            // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(222, 22);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(187, 6);
-            // 
-            // addYachtTypeToolStripMenuItem1
-            // 
-            this.addYachtTypeToolStripMenuItem1.Name = "addYachtTypeToolStripMenuItem1";
-            this.addYachtTypeToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
-            this.addYachtTypeToolStripMenuItem1.Text = "Add Yacht Type";
-            // 
-            // removeYachtTypeToolStripMenuItem
-            // 
-            this.removeYachtTypeToolStripMenuItem.Name = "removeYachtTypeToolStripMenuItem";
-            this.removeYachtTypeToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.removeYachtTypeToolStripMenuItem.Text = "Remove Yacht Type";
+            this.charterManagerBindingSource.DataSource = typeof(Program16.CharterManager);
             // 
             // Form1
             // 
@@ -261,6 +259,7 @@ namespace Program16
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHoursChartered)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,6 +288,7 @@ namespace Program16
         private System.Windows.Forms.ToolStripMenuItem addYachtTypeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem removeYachtTypeToolStripMenuItem;
         private System.Windows.Forms.Button btnAddCharter;
+        private System.Windows.Forms.BindingSource charterManagerBindingSource;
     }
 }
 

@@ -30,11 +30,11 @@ namespace Program16
         {
             Charters.Add(aCharter);
         }
-        
+
 
         public void AddCharter(string customerName, string yachtType, int yachtSize, decimal charterHours)
         {
-            Charter aCharter = new Charter(customerName, yachtType, yachtSize, (int)charterHours);
+            Charter aCharter = new Charter(customerName, yachtType, yachtSize, charterHours);
 
             Charters.Add(aCharter);
         }
@@ -47,6 +47,11 @@ namespace Program16
             return lowest;
         }
 
+        public List<Charter> GetAllCharters()
+        {
+            return Charters;
+        }
+
         public decimal GetAverageCharterFee()
         {
             var average = (from aCharter in Charters
@@ -55,16 +60,16 @@ namespace Program16
             return average;
         }
 
-        public int GetCharterCount(yachtgroup aGroup)
-        {
+        //public int GetCharterCount(yachtgroup aGroup)
+        //{
 
 
-            int count = (from aCharter in Charters
-                         where aCharter.YachtSize == (int)aGroup
-                         select aCharter).Count();
+        //    int count = (from aCharter in Charters
+        //                 where aCharter.YachtSize == (int)aGroup
+        //                 select aCharter).Count();
 
-            return count;
-        }
+        //    return count;
+        //}
        
         
 
