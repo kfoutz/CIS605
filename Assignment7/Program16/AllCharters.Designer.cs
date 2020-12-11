@@ -37,6 +37,7 @@ namespace Program16
             this.hoursCharteredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.charterFeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.charterManagerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.charterManagerDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.charterManagerBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +53,9 @@ namespace Program16
             this.hoursCharteredDataGridViewTextBoxColumn,
             this.charterFeeDataGridViewTextBoxColumn});
             this.charterManagerDataGridView.DataSource = this.charterManagerBindingSource;
-            this.charterManagerDataGridView.Location = new System.Drawing.Point(73, 118);
+            this.charterManagerDataGridView.Location = new System.Drawing.Point(12, 12);
             this.charterManagerDataGridView.Name = "charterManagerDataGridView";
-            this.charterManagerDataGridView.Size = new System.Drawing.Size(581, 220);
+            this.charterManagerDataGridView.Size = new System.Drawing.Size(544, 218);
             this.charterManagerDataGridView.TabIndex = 1;
             // 
             // custNameDataGridViewTextBoxColumn
@@ -96,11 +97,22 @@ namespace Program16
             this.charterManagerBindingSource.DataMember = "Charters";
             this.charterManagerBindingSource.DataSource = typeof(Program16.CharterManager);
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(247, 267);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close Form";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // AllCharters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 534);
+            this.ClientSize = new System.Drawing.Size(570, 316);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.charterManagerDataGridView);
             this.Name = "AllCharters";
             this.Text = "AllCharters";
@@ -118,5 +130,6 @@ namespace Program16
         private System.Windows.Forms.DataGridViewTextBoxColumn hoursCharteredDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn charterFeeDataGridViewTextBoxColumn;
         internal System.Windows.Forms.BindingSource charterManagerBindingSource;
+        private System.Windows.Forms.Button btnClose;
     }
 }

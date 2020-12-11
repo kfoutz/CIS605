@@ -10,14 +10,21 @@ using System.Windows.Forms;
 
 namespace Program16
 {
-    public partial class AllCharters : Form
+    public partial class ChartersSumary : Form
     {
-        public AllCharters()
+        public ChartersSumary()
         {
             InitializeComponent();
+
+            //CharterManager aCharterManager = new CharterManager();
+
+
+           
+
+
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -9,3 +9,8 @@ C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\bin\Debug\Program1
 C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.exe
 C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.pdb
 C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.AllCharters.resources
+C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.ChartersSumary.resources
+C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\bin\Debug\Program16.exe.manifest
+C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\bin\Debug\Program16.application
+C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.exe.manifest
+C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.application

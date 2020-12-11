@@ -60,19 +60,25 @@ namespace Program16
             return average;
         }
 
-        //public int GetCharterCount(yachtgroup aGroup)
-        //{
+        public int GetCharterCount(int aGroup)
+        {
 
 
-        //    int count = (from aCharter in Charters
-        //                 where aCharter.YachtSize == (int)aGroup
-        //                 select aCharter).Count();
+            int count = (from aCharter in Charters
+                         where aCharter.YachtSize == aGroup
+                         select aCharter).Count();
 
-        //    return count;
-        //}
-       
-        
+            return count;
+        }
 
-    }
+        public decimal GetTotalCharterFees()
+        {
+            var total = (from aCharter in Charters
+                         select aCharter.CharterFee).Sum();
+
+            return total;
+        }
+
+    }  
 }
 #endregion

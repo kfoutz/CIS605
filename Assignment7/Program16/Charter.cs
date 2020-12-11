@@ -6,18 +6,7 @@ using System.Threading.Tasks;
 
 namespace Program16
 {
-    //#region "Enumeration"
-
-    //public enum yachtgroup
-    //{
-    //    yacht22 = 1,
-    //    yacht24 = 2,
-    //    yacht30 = 3,
-    //    yacht32 = 4,
-    //    yacht36 = 5,
-    //    yacht38 = 6,
-    //    yacht45 = 7
-    //}
+    
     class Charter
     {
 
@@ -53,14 +42,14 @@ namespace Program16
             HoursChartered = hoursChartered;
             
 
-            CalcCharterFee();
+            CharterFee = CalcCharterFee();
         }
 
         #endregion
 
         #region "Methods"
 
-        public void CalcCharterFee()
+        public decimal CalcCharterFee()
         {
             
             decimal yachtFee = 0;
@@ -70,7 +59,7 @@ namespace Program16
             switch (YachtSize)
             {
                 case 22:
-                    yachtFee = 208 * HoursChartered;
+                    yachtFee = yacht22 * HoursChartered;
                     break;
                 case 24:
                     yachtFee = yacht24 * HoursChartered;
@@ -93,10 +82,9 @@ namespace Program16
 
                     
             }
+            CharterFee = yachtFee;
+            return CharterFee;
 
-            
-
-            
         }
 
         #endregion
