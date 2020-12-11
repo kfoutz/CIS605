@@ -87,6 +87,7 @@ namespace Program16
             chartersSummaryToolStripMenuItem.Enabled = true;
             resetForNextCharterToolStripMenuItem.Enabled = true;
             
+            
 
 
             
@@ -101,6 +102,12 @@ namespace Program16
 
         private void noChartersForAYachtSizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (cbxYachtSize.Text == string.Empty)
+            {
+                MessageBox.Show("Please select a Yacht size.", "Missing Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string strMessage;
             int aGroup = Convert.ToInt32(cbxYachtSize.SelectedItem);
             strMessage = aCharterManager.GetCharterCount(aGroup).ToString();

@@ -291,19 +291,19 @@ namespace Program16
             this.addYachtTypeToolStripMenuItem,
             this.removeYachtTypeToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(177, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
             // 
             // addYachtTypeToolStripMenuItem
             // 
             this.addYachtTypeToolStripMenuItem.Name = "addYachtTypeToolStripMenuItem";
-            this.addYachtTypeToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.addYachtTypeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addYachtTypeToolStripMenuItem.Text = "Add Yacht Type";
             this.addYachtTypeToolStripMenuItem.Click += new System.EventHandler(this.addYachtTypeToolStripMenuItem1_Click);
             // 
             // removeYachtTypeToolStripMenuItem1
             // 
             this.removeYachtTypeToolStripMenuItem1.Name = "removeYachtTypeToolStripMenuItem1";
-            this.removeYachtTypeToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.removeYachtTypeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.removeYachtTypeToolStripMenuItem1.Text = "Remove Yacht Type";
             this.removeYachtTypeToolStripMenuItem1.Click += new System.EventHandler(this.removeYachtTypeToolStripMenuItem_Click);
             // 
