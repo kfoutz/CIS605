@@ -14,3 +14,18 @@ C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\bin\Debug\Program1
 C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\bin\Debug\Program16.application
 C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.exe.manifest
 C:\Users\kerry\Documents\CSU\CIS605\git\Assignment7\Program16\obj\Debug\Program16.application
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\bin\Debug\Program16.exe.config
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\bin\Debug\Program16.exe.manifest
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\bin\Debug\Program16.application
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\bin\Debug\Program16.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\bin\Debug\Program16.pdb
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.csprojAssemblyReference.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.AllCharters.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.ChartersSumary.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.Form1.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.Properties.Resources.resources
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.csproj.GenerateResource.cache
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.exe.manifest
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.application
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.exe
+S:\CIS605\Foutz,Kerry (kfoutz)\git\CIS605\Assignment7\Program16\obj\Debug\Program16.pdb

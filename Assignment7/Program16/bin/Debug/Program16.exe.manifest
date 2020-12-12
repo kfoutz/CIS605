@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Program16.exe" size="114608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Program16.exe" size="238000">
       <assemblyIdentity name="Program16" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>VKZnmEBO4/9u8th5Q3X+R4LiSFScVR53AOZ9ObDpX/w=</dsig:DigestValue>
+        <dsig:DigestValue>BG4yWmcmRqPQyQamsFr7zCKcNAYP7PWgZwSxUmpyxBA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

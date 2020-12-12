@@ -86,6 +86,9 @@ namespace Program16
             noChartersForAYachtSizeToolStripMenuItem.Enabled = true;
             chartersSummaryToolStripMenuItem.Enabled = true;
             resetForNextCharterToolStripMenuItem.Enabled = true;
+            charterSummaryToolStripMenuItem.Enabled = true;
+            //contextMenuStrip2.Items[0].Enabled = true;
+            //contextMenuStrip2 = true;
             
             
 

@@ -32,8 +32,8 @@ namespace Program16
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.charterManagerDataGridView = new System.Windows.Forms.DataGridView();
-            this.btnClose = new System.Windows.Forms.Button();
             this.charterManagerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnClose = new System.Windows.Forms.Button();
             this.custNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yachtTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yachtSizeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +59,12 @@ namespace Program16
             this.charterManagerDataGridView.Size = new System.Drawing.Size(544, 218);
             this.charterManagerDataGridView.TabIndex = 1;
             // 
+            // charterManagerBindingSource
+            // 
+            this.charterManagerBindingSource.AllowNew = false;
+            this.charterManagerBindingSource.DataMember = "Charters";
+            this.charterManagerBindingSource.DataSource = typeof(Program16.CharterManager);
+            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(247, 267);
@@ -69,35 +75,29 @@ namespace Program16
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // charterManagerBindingSource
-            // 
-            this.charterManagerBindingSource.AllowNew = false;
-            this.charterManagerBindingSource.DataMember = "Charters";
-            this.charterManagerBindingSource.DataSource = typeof(Program16.CharterManager);
-            // 
             // custNameDataGridViewTextBoxColumn
             // 
             this.custNameDataGridViewTextBoxColumn.DataPropertyName = "CustName";
-            this.custNameDataGridViewTextBoxColumn.HeaderText = "CustName";
+            this.custNameDataGridViewTextBoxColumn.HeaderText = "Customer Name";
             this.custNameDataGridViewTextBoxColumn.Name = "custNameDataGridViewTextBoxColumn";
             this.custNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // yachtTypeDataGridViewTextBoxColumn
             // 
             this.yachtTypeDataGridViewTextBoxColumn.DataPropertyName = "YachtType";
-            this.yachtTypeDataGridViewTextBoxColumn.HeaderText = "YachtType";
+            this.yachtTypeDataGridViewTextBoxColumn.HeaderText = "Yacht Type";
             this.yachtTypeDataGridViewTextBoxColumn.Name = "yachtTypeDataGridViewTextBoxColumn";
             // 
             // yachtSizeDataGridViewTextBoxColumn
             // 
             this.yachtSizeDataGridViewTextBoxColumn.DataPropertyName = "YachtSize";
-            this.yachtSizeDataGridViewTextBoxColumn.HeaderText = "YachtSize";
+            this.yachtSizeDataGridViewTextBoxColumn.HeaderText = "Yacht Size";
             this.yachtSizeDataGridViewTextBoxColumn.Name = "yachtSizeDataGridViewTextBoxColumn";
             // 
             // hoursCharteredDataGridViewTextBoxColumn
             // 
             this.hoursCharteredDataGridViewTextBoxColumn.DataPropertyName = "HoursChartered";
-            this.hoursCharteredDataGridViewTextBoxColumn.HeaderText = "HoursChartered";
+            this.hoursCharteredDataGridViewTextBoxColumn.HeaderText = "Hours Chartered";
             this.hoursCharteredDataGridViewTextBoxColumn.Name = "hoursCharteredDataGridViewTextBoxColumn";
             this.hoursCharteredDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -107,7 +107,7 @@ namespace Program16
             dataGridViewCellStyle1.Format = "C2";
             dataGridViewCellStyle1.NullValue = null;
             this.charterFeeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.charterFeeDataGridViewTextBoxColumn.HeaderText = "CharterFee";
+            this.charterFeeDataGridViewTextBoxColumn.HeaderText = "Charter Fee";
             this.charterFeeDataGridViewTextBoxColumn.Name = "charterFeeDataGridViewTextBoxColumn";
             this.charterFeeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
